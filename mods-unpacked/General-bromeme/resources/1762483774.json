@@ -1,0 +1,64 @@
+{
+  "name": "如来神掌",
+  "price": 80,
+  "max_nb": -1,
+  "tier": 2,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_rlsz_424",
+  "tags": [
+    "stat_percent_damage",
+    "stat_attack_speed",
+    "set_unarmed",
+    "set_support"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/characters/brawler/brawler_effect_1.tres",
+      "changed_key_values": {
+        "value": 200,
+        "set_id": "set_support"
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/artificer/artificer_effect_1c.tres",
+      "changed_key_values": {
+        "value": 200,
+        "set_id": "set_unarmed"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/coffee/coffee_effect_1.tres",
+      "changed_key_values": {
+        "value": -75
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/coffee/coffee_effect_2.tres",
+      "changed_key_values": {
+        "value": -75
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cape/cape_effect_2.tres",
+      "changed_key_values": {
+        "value": 5
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cape/cape_effect_3.tres",
+      "changed_key_values": {
+        "value": -5
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 8
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1762483774.png"
+}

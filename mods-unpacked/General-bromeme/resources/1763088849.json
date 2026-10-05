@@ -1,0 +1,57 @@
+{
+  "name": "中指",
+  "price": 50,
+  "max_nb": -1,
+  "tier": 2,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_cf_126",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/peacock/peacock_effect_3.tres",
+      "changed_key_values": {
+        "value": 25
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/peacock/peacock_effect_3.tres",
+      "changed_key_values": {
+        "key": "enemy_speed",
+        "value": 25
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/peacock/peacock_effect_2.tres",
+      "changed_key_values": {
+        "key": "gold_drops",
+        "value": 50,
+        "storage_method": 1,
+        "effect_sign": 0
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/peacock/peacock_effect_2.tres",
+      "changed_key_values": {
+        "value": 50,
+        "storage_method": 1,
+        "effect_sign": 0
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/fertilizer/fertilizer_effect_1.tres",
+      "changed_key_values": {
+        "value": 10
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 9
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1763088849.png"
+}

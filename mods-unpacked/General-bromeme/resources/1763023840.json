@@ -1,0 +1,30 @@
+{
+  "name": "钻探原油",
+  "price": 40,
+  "max_nb": -1,
+  "tier": 1,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_ztyy_24",
+  "tags": [
+    "stat_harvesting"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/vigilante_ring/vigilante_ring_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_harvesting",
+        "value": 5
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 2
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1763023840.png"
+}

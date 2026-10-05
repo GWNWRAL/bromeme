@@ -1,0 +1,37 @@
+{
+  "name": "伟大的孙笑川",
+  "price": 15,
+  "max_nb": 1,
+  "tier": 3,
+  "item_type": 1,
+  "unlocked_by_default": 1,
+  "my_id": "item_bromeme_wddsxc_464",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_jsly_385",
+        "text_key": "[empty]",
+        "value": 40
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_fkcs_87",
+        "text_key": "当你研究李文亚理论时，武汉大学的日裔学阀孙笑川教授找到了你，你明白你接下来只有两个选择，要么和孙笑川同流合污，要么反抗孙笑川。",
+        "value": 40
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 10
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1765218026.png"
+}

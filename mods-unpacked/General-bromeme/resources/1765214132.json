@@ -1,0 +1,107 @@
+{
+  "name": "敌对星球",
+  "price": 99,
+  "max_nb": -1,
+  "tier": 2,
+  "item_type": 1,
+  "unlocked_by_default": 1,
+  "my_id": "item_bromeme_ddxq_135",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/peacock/peacock_effect_3.tres",
+      "changed_key_values": {
+        "value": 50
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/peacock/peacock_effect_3.tres",
+      "changed_key_values": {
+        "key": "enemy_health",
+        "value": 20
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/peacock/peacock_effect_2.tres",
+      "changed_key_values": {
+        "value": 50,
+        "storage_method": 1,
+        "effect_sign": 0
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/peacock/peacock_effect_2.tres",
+      "changed_key_values": {
+        "key": "gold_drops",
+        "value": 60,
+        "storage_method": 1,
+        "effect_sign": 0
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/fertilizer/fertilizer_effect_1.tres",
+      "changed_key_values": {
+        "value": 50
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/bait/bait_effect_2.tres",
+      "changed_key_values": {
+        "text_key": "下场敌袭一开始会出现特别多特殊敌人"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/bait/bait_effect_2.tres",
+      "changed_key_values": {
+        "text_key": "[EMPTY]"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/bait/bait_effect_2.tres",
+      "changed_key_values": {
+        "text_key": "[EMPTY]"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/bait/bait_effect_2.tres",
+      "changed_key_values": {
+        "text_key": "[EMPTY]"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/bait/bait_effect_2.tres",
+      "changed_key_values": {
+        "text_key": "[EMPTY]"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/bait/bait_effect_2.tres",
+      "changed_key_values": {
+        "text_key": "[EMPTY]"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/bait/bait_effect_2.tres",
+      "changed_key_values": {
+        "text_key": "[EMPTY]"
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_yzdjt_427",
+        "text_key": "[EMPTY]",
+        "value": 1
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 5
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1765214132.png"
+}

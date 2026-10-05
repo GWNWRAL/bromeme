@@ -1,0 +1,54 @@
+{
+  "name": "反抗孙笑川",
+  "price": 70,
+  "max_nb": 1,
+  "tier": 2,
+  "item_type": 1,
+  "unlocked_by_default": 1,
+  "my_id": "item_bromeme_fkcs_87",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_lwyll_93",
+        "value": 100,
+        "text_key": "你很快就能完成伟大的李文亚理论，只是。。一场恶战在所难免"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/celery_tea/effects/celery_tea_effect_1.tres",
+      "changed_key_values": {
+        "value": 20
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_jsly_385",
+        "value": -100,
+        "text_key": "[empty]"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 9
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "",
+        "text_key": "BROMEME_EFF_FKCS",
+        "custom_key": "",
+        "value": 1,
+        "storage_method": 0,
+        "effect_sign": 0
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1765216596.png"
+}

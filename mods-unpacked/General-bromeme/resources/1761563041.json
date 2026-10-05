@@ -1,0 +1,37 @@
+{
+  "name": "枪炮店",
+  "price": 75,
+  "max_nb": 1,
+  "tier": 2,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_qpd_29",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/characters/arms_dealer/arms_dealer_effect_2.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/characters/arms_dealer/arms_dealer_effect_1.tres",
+      "changed_key_values": {
+        "value": -10
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cyclops_worm/cyclops_worm_effect_1.tres",
+      "changed_key_values": {
+        "value": 5
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 4
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1761563041.png"
+}

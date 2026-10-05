@@ -1,0 +1,58 @@
+{
+  "name": "工程学的极限",
+  "price": 200,
+  "max_nb": 10,
+  "tier": 3,
+  "item_type": 1,
+  "unlocked_by_default": 1,
+  "my_id": "item_bromeme_tdmz_162",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/compass/compass_effect_2.tres",
+      "changed_key_values": {
+        "value": 7
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_dqdp_253",
+        "text_key": "你构思出一种前所未有的大炮",
+        "value": 5
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_tdmz_174",
+        "text_key": "土豆的名字。。。都有哪些？"
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_jxyj_447",
+        "text_key": "研究远未结束",
+        "value": 1
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_jjyj_226",
+        "text_key": "你的脑海中构思着巨大机甲",
+        "value": 1
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 4
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1783695742.png"
+}

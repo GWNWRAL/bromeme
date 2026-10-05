@@ -1,0 +1,94 @@
+{
+  "name": "终极侮辱",
+  "price": 65,
+  "max_nb": -1,
+  "tier": 3,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_cf_78",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/peacock/peacock_effect_3.tres",
+      "changed_key_values": {
+        "value": 40
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/peacock/peacock_effect_3.tres",
+      "changed_key_values": {
+        "key": "enemy_speed",
+        "value": 20
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/peacock/peacock_effect_3.tres",
+      "changed_key_values": {
+        "key": "enemy_health",
+        "value": 40
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/peacock/peacock_effect_2.tres",
+      "changed_key_values": {
+        "key": "gold_drops",
+        "value": 150,
+        "storage_method": 1,
+        "effect_sign": 0
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/peacock/peacock_effect_2.tres",
+      "changed_key_values": {
+        "value": 50,
+        "storage_method": 1,
+        "effect_sign": 0
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/potato/potato_effect_5.tres",
+      "changed_key_values": {
+        "value": 10
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/fertilizer/fertilizer_effect_1.tres",
+      "changed_key_values": {
+        "value": 30
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/bait/bait_effect_2.tres",
+      "changed_key_values": {
+        "text_key": "下场敌袭一开始会出现一大波特殊敌人"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/bait/bait_effect_2.tres",
+      "changed_key_values": {
+        "text_key": "[EMPTY]"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/bait/bait_effect_2.tres",
+      "changed_key_values": {
+        "text_key": "[EMPTY]"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/bait/bait_effect_2.tres",
+      "changed_key_values": {
+        "text_key": "[EMPTY]"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 9
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1763088865.png"
+}

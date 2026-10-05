@@ -1,0 +1,34 @@
+{
+  "name": "李文亚",
+  "price": 1,
+  "max_nb": -1,
+  "tier": 0,
+  "item_type": 0,
+  "unlocked_by_default": 0,
+  "my_id": "character_bromeme_lwy_125",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/characters/mage/mage_effect_3.tres",
+      "changed_key_values": { "key": "item_bromeme_lwysg_398" }
+    },
+    {
+      "base_resource_path": "res://items/all/tree/tree_effect_1.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/characters/mutant/mutant_effect_1.tres",
+      "changed_key_values": {
+        "value": 30,
+        "effect_sign": 1
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/whistle/effects/whistle_effect_0.tres",
+      "changed_key_values": { "value": 20 }
+    }
+  ],
+  "starting_weapons": [ "weapon_fist_1", "weapon_hand_1", "weapon_double_barrel_shotgun_1", "weapon_pistol_1", "weapon_taser_1", "weapon_wand_1", "weapon_cacti_club_1", "weapon_screwdriver_1", "weapon_wrench_1", "weapon_ghost_axe_1", "weapon_chopper_1", "weapon_spiky_shield_1", "weapon_pruner_1", "weapon_claw_1", "weapon_icicle_1", "weapon_brick_1", "weapon_javelin_1" ],
+  "relative_icon_path": "icons/1765220738.png"
+}

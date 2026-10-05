@@ -1,0 +1,43 @@
+{
+  "name": "狂战士",
+  "price": 1,
+  "max_nb": -1,
+  "tier": 0,
+  "item_type": 0,
+  "unlocked_by_default": 0,
+  "my_id": "character_bromeme_kzs_485",
+  "tags": [],
+  "wanted_tags": [ "stat_lifesteal" ],
+  "datas": [
+    {
+      "base_resource_path": "res://items/characters/gladiator/gladiator_effect_3.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/characters/mage/mage_effect_9.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/butterfly/butterfly_effect_1.tres",
+      "changed_key_values": { "value": 10 }
+    },
+    {
+      "base_resource_path": "res://items/all/broken_mouth/broken_mouth_effect_2.tres",
+      "changed_key_values": { "value": -50 }
+    },
+    {
+      "base_resource_path": "res://items/characters/mage/mage_effect_3.tres",
+      "changed_key_values": { "key": "item_scar" }
+    },
+    {
+      "base_resource_path": "res://items/all/power_generator/power_generator_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_attack_speed",
+        "nb_stat_scaled": 1,
+        "stat_scaled": "stat_lifesteal"
+      }
+    }
+  ],
+  "starting_weapons": [ "weapon_spear_1", "weapon_stick_1", "weapon_fist_1", "weapon_knife_1", "weapon_cacti_club_1", "weapon_lightning_shiv_1", "weapon_dagger_1", "weapon_scissors_1", "weapon_ghost_axe_1", "weapon_ghost_flint_1", "weapon_fighting_stick_1", "weapon_sharp_tooth_1", "weapon_hatchet_1", "weapon_chopper_1" ],
+  "relative_icon_path": "icons/1762348216.png"
+}

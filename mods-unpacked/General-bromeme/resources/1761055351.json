@@ -1,0 +1,49 @@
+{
+  "name": "烟",
+  "price": 8,
+  "max_nb": -1,
+  "tier": 1,
+  "item_type": 1,
+  "unlocked_by_default": 1,
+  "my_id": "item_bromeme_yan_262",
+  "tags": [
+    "stat_attack_speed",
+    "xp_gain"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/vigilante_ring/vigilante_ring_effect_1.tres",
+      "changed_key_values": {
+        "value": -1,
+        "key": "stat_max_hp"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "value": 4
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/coffee/coffee_effect_1.tres",
+      "changed_key_values": {
+        "value": 4
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/scar/scar_effect_1.tres",
+      "changed_key_values": {
+        "value": 4
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 3
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1761055351.png"
+}

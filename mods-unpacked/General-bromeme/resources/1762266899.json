@@ -1,0 +1,69 @@
+{
+  "name": "牢大",
+  "price": 1,
+  "max_nb": -1,
+  "tier": 0,
+  "item_type": 0,
+  "unlocked_by_default": 0,
+  "my_id": "character_bromeme_kobe_83",
+  "tags": [],
+  "wanted_tags": [
+    "knockback",
+    "stat_attack_speed",
+    "stat_ranged_damage",
+    "stat_melee_damage"
+  ],
+  "datas": [
+    {
+      "base_resource_path": "res://items/characters/sick/sick_effect_4.tres",
+      "changed_key_values": {
+        "value": -24
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/mage/mage_effect_3.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_item_zhou_435"
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/mage/mage_effect_3.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_item_zsj_183"
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/mage/mage_effect_3.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_character_basketball_318"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/power_generator/power_generator_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_ranged_damage",
+        "nb_stat_scaled": 5,
+        "stat_scaled": "stat_melee_damage"
+      }
+    }
+  ],
+  "starting_weapons": [
+    "weapon_fist_1",
+    "weapon_knife_1",
+    "weapon_rock_1",
+    "weapon_spear_1",
+    "weapon_stick_1",
+    "weapon_torch_1",
+    "weapon_lightning_shiv_1",
+    "weapon_dagger_1",
+    "weapon_ghost_flint_1",
+    "weapon_ghost_axe_1",
+    "weapon_plank_1",
+    "weapon_jousting_lance_1",
+    "weapon_spoon_1",
+    "General_weapon_basketball_1",
+    "weapon_pistol_1",
+    "weapon_shredder_1"
+  ],
+  "relative_icon_path": "icons/1762266899.png"
+}

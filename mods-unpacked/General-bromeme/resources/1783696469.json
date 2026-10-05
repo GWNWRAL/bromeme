@@ -1,0 +1,39 @@
+{
+  "name": "工程学研究",
+  "price": 100,
+  "max_nb": 3,
+  "tier": 2,
+  "item_type": 1,
+  "unlocked_by_default": 1,
+  "my_id": "item_bromeme_gcx1_472",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/characters/engineer/engineer_effect_1b.tres",
+      "changed_key_values": {
+        "value": 5
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_gcx2_342",
+        "text_key": "你对工程学的研究有了突破",
+        "value": 15
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/clockwork_wasp/effects/clockwork_wasp_effect_1.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 2
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1783696469.png"
+}

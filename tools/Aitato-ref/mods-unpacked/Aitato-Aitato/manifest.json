@@ -1,0 +1,27 @@
+{
+	"name": "Aitato",
+	"namespace": "Aitato",
+	"version_number": "0.0.2",
+	"description": "Aitato - adds new characters and content to Brotato. First character: DeepSeek (\u5927\u80a5\u9c7c), who starts with a Scared Sausage and has -25% Elemental Damage modifications. When she stops moving she falls asleep: +10 HP Regeneration, and her art is swapped for a sleeping pose.",
+	"website_url": "",
+	"dependencies": [
+		"Darkly77-ContentLoader"
+	],
+	"extra": {
+		"godot": {
+			"incompatibilities": [],
+			"optional_dependencies": [],
+			"load_before": [],
+			"authors": [
+				"Aitato"
+			],
+			"compatible_mod_loader_version": [
+				"6.2.3"
+			],
+			"compatible_game_version": [
+				"1.1.15.4"
+			],
+			"config_defaults": {}
+		}
+	}
+}

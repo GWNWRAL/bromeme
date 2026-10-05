@@ -1,0 +1,33 @@
+{
+  "name": "投资",
+  "price": 18,
+  "max_nb": 5,
+  "tier": 0,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_tz_511",
+  "tags": [
+    "stat_harvesting"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/characters/mage/mage_effect_2.tres",
+      "changed_key_values": {
+        "value": 5,
+        "stat_displayed": "stat_harvesting",
+        "stats_modified": [
+          "stat_harvesting"
+        ]
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 3
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1763032527.png"
+}

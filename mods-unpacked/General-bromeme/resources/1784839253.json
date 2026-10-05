@@ -1,0 +1,45 @@
+{
+  "name": "研究方向：工程学",
+  "price": 99,
+  "max_nb": 1,
+  "tier": 1,
+  "item_type": 1,
+  "unlocked_by_default": 1,
+  "my_id": "item_bromeme_fx1_191",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_gcx1_472",
+        "value": 15,
+        "text_key": "你站在小径分叉的花园前，选择你未来的研究方向"
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_fx2_365",
+        "value": -100,
+        "text_key": "choose life，你选择研究工程学（注意，获得此物后不能研究航天学）。"
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_lwyh_1",
+        "value": -100,
+        "text_key": "[EMPTY]"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 3
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1784839253.png"
+}

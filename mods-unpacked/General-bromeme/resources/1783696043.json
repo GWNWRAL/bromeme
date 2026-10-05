@@ -1,0 +1,36 @@
+{
+  "name": "进阶工程学",
+  "price": 200,
+  "max_nb": 3,
+  "tier": 2,
+  "item_type": 1,
+  "unlocked_by_default": 1,
+  "my_id": "item_bromeme_gcx2_342",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/snowball/effects/snowball_effect_0.tres",
+      "changed_key_values": {
+        "key": "stat_engineering",
+        "key2": "stat_engineering"
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_tdmz_162",
+        "text_key": "你对工程学的研究有了重大突破",
+        "value": 15
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 3
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1783696043.png"
+}

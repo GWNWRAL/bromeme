@@ -1,0 +1,38 @@
+{
+  "name": "雨姐",
+  "price": 1,
+  "max_nb": -1,
+  "tier": 0,
+  "item_type": 0,
+  "unlocked_by_default": 0,
+  "my_id": "character_bromeme_dj_445",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/characters/loud/loud_effect_2.tres",
+      "changed_key_values": { "value": 20 }
+    },
+    {
+      "base_resource_path": "res://items/characters/mutant/mutant_effect_2.tres",
+      "changed_key_values": { "value": 35 }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/characters/romantic/effects/romantic_effect_0.tres",
+      "changed_key_values": {
+        "key": "stat_speed",
+        "value": 30,
+        "value2": 30
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/characters/creature/effects/creature_effect_2a.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_dj_504",
+        "value": 2
+      }
+    }
+  ],
+  "starting_weapons": [ "weapon_fist_1", "weapon_double_barrel_shotgun_1", "weapon_smg_1", "weapon_taser_1", "weapon_cacti_club_1", "weapon_scissors_1", "weapon_medical_gun_1", "weapon_shuriken_1", "weapon_slingshot_1", "weapon_ghost_scepter_1", "weapon_hatchet_1", "weapon_chopper_1", "weapon_jousting_lance_1", "weapon_claw_1", "weapon_sharp_tooth_1", "weapon_hiking_stick_1", "weapon_lute_1", "weapon_spoon_1", "weapon_flute_1" ],
+  "relative_icon_path": "icons/1762608632.png"
+}

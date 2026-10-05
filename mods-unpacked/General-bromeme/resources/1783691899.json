@@ -1,0 +1,42 @@
+{
+  "name": "残破大盾",
+  "price": 45,
+  "max_nb": -1,
+  "tier": 2,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_cpdd_16",
+  "tags": [
+    "stat_armor"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/characters/masochist/masochist_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_armor",
+        "value": -3
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/duct_tape/duct_tape_effect_1.tres",
+      "changed_key_values": {
+        "value": 12
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/helmet/helmet_effect_2.tres",
+      "changed_key_values": {
+        "value": -5
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 3
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1783691899.png"
+}

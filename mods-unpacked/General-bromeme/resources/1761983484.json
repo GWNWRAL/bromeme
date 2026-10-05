@@ -1,0 +1,45 @@
+{
+  "name": "石鬼面",
+  "price": 99,
+  "max_nb": 1,
+  "tier": 3,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_sgm_273",
+  "tags": [
+    "stat_lifesteal",
+    "stat_max_hp"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "value": 5
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/power_generator/power_generator_effect_1.tres",
+      "changed_key_values": {
+        "stat_scaled": "stat_max_hp",
+        "key": "stat_lifesteal",
+        "value": 1,
+        "nb_stat_scaled": 2
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/alien_worm/alien_worm_effect_1.tres",
+      "changed_key_values": {
+        "value": -5
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 8
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1761983484.png"
+}

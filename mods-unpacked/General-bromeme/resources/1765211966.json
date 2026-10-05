@@ -1,0 +1,51 @@
+{
+  "name": "王源",
+  "price": 1,
+  "max_nb": -1,
+  "tier": 0,
+  "item_type": 0,
+  "unlocked_by_default": 0,
+  "my_id": "character_bromeme_wy_266",
+  "tags": [],
+  "wanted_tags": [ "stat_armor", "stat_dodge" ],
+  "datas": [
+    {
+      "base_resource_path": "res://items/characters/mage/mage_effect_3.tres",
+      "changed_key_values": { "key": "item_bromeme_yan_56" }
+    },
+    {
+      "base_resource_path": "res://items/characters/old/old_effect_4.tres",
+      "changed_key_values": { "value": 20 }
+    },
+    {
+      "base_resource_path": "res://items/characters/ghost/ghost_effect_3.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/characters/golem/golem_effect_2.tres",
+      "changed_key_values": {
+        "key": "effect_reduce_stat_gains",
+        "value": -99,
+        "effect_sign": 1
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/acid/acid_effect_1.tres",
+      "changed_key_values": { "value": 1200 }
+    },
+    {
+      "base_resource_path": "res://items/characters/golem/golem_effect_3.tres",
+      "changed_key_values": { "value": 75 }
+    },
+    {
+      "base_resource_path": "res://items/characters/mage/mage_effect_2.tres",
+      "changed_key_values": {
+        "value": 100,
+        "stat_displayed": "stat_melee_damage",
+        "stats_modified": [ "stat_melee_damage" ]
+      }
+    }
+  ],
+  "starting_weapons": [ "weapon_cacti_club_1", "weapon_chopper_1", "weapon_knife_1", "weapon_rock_1", "weapon_stick_1", "weapon_torch_1", "weapon_ghost_axe_1", "weapon_hand_1", "weapon_pruner_1", "weapon_wrench_1", "weapon_fist_1" ],
+  "relative_icon_path": "icons/1765211966.png"
+}

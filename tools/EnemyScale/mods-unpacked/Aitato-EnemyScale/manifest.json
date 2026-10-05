@@ -1,0 +1,61 @@
+{
+	"name": "EnemyScale",
+	"namespace": "Aitato",
+	"version_number": "1.0.0",
+	"description": "Enemy health, damage and speed grow exponentially (compounding) every wave instead of linearly: each stat is multiplied by (1 + growth)^wave. Defaults are 5% / 5% / 0% per wave, all adjustable with sliders in Mod Options.",
+	"website_url": "",
+	"dependencies": [],
+	"extra": {
+		"godot": {
+			"authors": [
+				"Aitato"
+			],
+			"optional_dependencies": [],
+			"compatible_mod_loader_version": [
+				"6.3.0"
+			],
+			"compatible_game_version": [
+				"1.1.15.4"
+			],
+			"incompatibilities": [],
+			"load_before": [],
+			"tags": [
+				"New Mechanics",
+				"Challenges"
+			],
+			"config_schema": {
+				"type": "object",
+				"properties": {
+					"hp_percent_per_wave": {
+						"type": "number",
+						"title": "Enemy health growth per wave",
+						"tooltip": "Compounds every wave: multiplier = (1 + this)^wave. 5% means wave 2 is x1.05, wave 3 is x1.10, wave 20 is x2.65.",
+						"default": 0.05,
+						"minimum": 0,
+						"maximum": 1.0,
+						"multipleOf": 0.01
+					},
+					"damage_percent_per_wave": {
+						"type": "number",
+						"title": "Enemy damage growth per wave",
+						"tooltip": "Compounds every wave: multiplier = (1 + this)^wave. 5% means wave 2 is x1.05, wave 3 is x1.10, wave 20 is x2.65.",
+						"default": 0.05,
+						"minimum": 0,
+						"maximum": 1.0,
+						"multipleOf": 0.01
+					},
+					"speed_percent_per_wave": {
+						"type": "number",
+						"title": "Enemy speed growth per wave",
+						"tooltip": "Compounds every wave: multiplier = (1 + this)^wave. 0% = off (changes the game a lot).",
+						"default": 0,
+						"minimum": 0,
+						"maximum": 0.3,
+						"multipleOf": 0.01
+					}
+				}
+			},
+			"description_rich": ""
+		}
+	}
+}

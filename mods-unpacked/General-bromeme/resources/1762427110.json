@@ -1,0 +1,75 @@
+{
+  "name": "达芬奇机器人",
+  "price": 1,
+  "max_nb": -1,
+  "tier": 0,
+  "item_type": 0,
+  "unlocked_by_default": 0,
+  "my_id": "character_bromeme_dfqjqr_221",
+  "tags": [],
+  "wanted_tags": [
+    "structure"
+  ],
+  "datas": [
+    {
+      "base_resource_path": "res://items/characters/fisherman/fisherman_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_turret_healing"
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/fisherman/fisherman_effect_2.tres",
+      "changed_key_values": {
+        "key": "item_turret_healing",
+        "value": -50
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/lighthouse/effects/lighthouse_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_attack_speed",
+        "value": 3,
+        "effect_sign": 3
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/gladiator/gladiator_effect_4.tres",
+      "changed_key_values": {
+        "value": -15
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/mage/mage_effect_3b.tres",
+      "changed_key_values": {
+        "key": "item_improved_tools"
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/glutton/glutton_effect_4.tres",
+      "changed_key_values": {
+        "value": -5
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/artificer/artificer_effect_1c.tres",
+      "changed_key_values": {
+        "value": 50,
+        "set_id": "set_medical"
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/doctor/doctor_effect_5.tres",
+      "changed_key_values": {
+        "key": "stat_percent_damage",
+        "value": -40
+      }
+    }
+  ],
+  "starting_weapons": [
+    "weapon_scissors_1",
+    "weapon_wrench_1",
+    "weapon_medical_gun_1",
+    "neuromod-swarm_remote_1"
+  ],
+  "relative_icon_path": "icons/1762427110.png"
+}

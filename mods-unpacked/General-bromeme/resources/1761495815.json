@@ -1,0 +1,40 @@
+{
+  "name": "阳光玫瑰",
+  "price": 30,
+  "max_nb": -1,
+  "tier": 0,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_ygmy_407",
+  "tags": [
+    "stat_hp_regeneration",
+    "stat_engineering"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/campfire/campfire_effect_2.tres",
+      "changed_key_values": {
+        "value": 1
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/alloy/alloy_effect_3.tres",
+      "changed_key_values": {
+        "value": 1
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/boiling_water/boiling_water_effect_2.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 3
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1761495815.png"
+}

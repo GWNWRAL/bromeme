@@ -1,0 +1,87 @@
+{
+  "name": "炮塔",
+  "price": 1,
+  "max_nb": -1,
+  "tier": 0,
+  "item_type": 0,
+  "unlocked_by_default": 0,
+  "my_id": "character_bromeme_pt_431",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": { "value": 25 }
+    },
+    {
+      "base_resource_path": "res://items/all/campfire/campfire_effect_2.tres",
+      "changed_key_values": { "key": "stat_armor", "value": 10 }
+    },
+    {
+      "base_resource_path": "res://items/all/campfire/campfire_effect_2.tres",
+      "changed_key_values": { "value": 10 }
+    },
+    {
+      "base_resource_path": "res://items/all/shackles/shackles_effect_4.tres",
+      "changed_key_values": {
+        "set_cap_to_current_stat": "",
+        "value": -100
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "",
+        "text_key": "按下移动键时护甲翻倍，但无法回复生命",
+        "custom_key": "bromeme_turret_move",
+        "value": 0,
+        "storage_method": 0,
+        "effect_sign": 0
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "",
+        "text_key": "刚按下移动键时获得 0.25 秒无敌（冷却 1 秒）",
+        "custom_key": "bromeme_turret_iframe",
+        "value": 0,
+        "storage_method": 0,
+        "effect_sign": 0
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/lantern/effects/lantern_effect_0d.tres",
+      "changed_key_values": { "value": 30 }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/lantern/effects/lantern_effect_1.tres",
+      "changed_key_values": {
+        "text_key": "EFFECT_KNOCKBACK_AURA",
+        "value": 1
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/sifds_relic/sifds_relic_effect_1.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/characters/golem/golem_effect_2.tres",
+      "changed_key_values": {
+        "value": 50,
+        "stat_displayed": "stat_attack_speed",
+        "stats_modified": [ "stat_attack_speed" ]
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/golem/golem_effect_2.tres",
+      "changed_key_values": {
+        "value": 50,
+        "stat_displayed": "stat_damage",
+        "stats_modified": [ "stat_damage" ]
+      }
+    }
+  ],
+  "starting_weapons": [ "weapon_hammer_2", "weapon_double_barrel_shotgun_1", "weapon_pistol_1", "weapon_screwdriver_1", "weapon_wrench_1", "weapon_laser_gun_1", "weapon_medical_gun_1", "weapon_shredder_1", "weapon_shuriken_1", "weapon_slingshot_1", "weapon_crossbow_1", "weapon_revolver_1", "weapon_icicle_1", "weapon_vorpal_sword_2", "weapon_trident_2", "weapon_flute_1", "weapon_javelin_1" ],
+  "relative_icon_path": "icons/1784211450.png"
+}

@@ -1,0 +1,82 @@
+{
+  "name": "霍金",
+  "price": 1,
+  "max_nb": -1,
+  "tier": 0,
+  "item_type": 0,
+  "unlocked_by_default": 0,
+  "my_id": "character_bromeme_hj_331",
+  "tags": [],
+  "wanted_tags": [ "stat_elemental_damage", "stat_engineering", "stat_structure" ],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/celery_tea/effects/celery_tea_effect_0.tres",
+      "changed_key_values": {
+        "key": "stat_range",
+        "value": 50
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/vigilante_ring/vigilante_ring_effect_1.tres",
+      "changed_key_values": { "key": "stat_engineering" }
+    },
+    {
+      "base_resource_path": "res://items/all/vigilante_ring/vigilante_ring_effect_1.tres",
+      "changed_key_values": { "key": "stat_elemental_damage" }
+    },
+    {
+      "base_resource_path": "res://items/all/vigilante_ring/vigilante_ring_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_attack_speed",
+        "value": -3
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/vigilante_ring/vigilante_ring_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_speed",
+        "value": -3
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/vigilante_ring/vigilante_ring_effect_1.tres",
+      "changed_key_values": {
+        "key": "pickup_range",
+        "value": 15
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/ice_cube/effects/ice_cube_effect_0.tres",
+      "changed_key_values": {
+        "text_key": "EFFECT_ENEMY_PERCENT_DAMAGE_TAKEN",
+        "value": 20,
+        "max_stacks": -1,
+        "max_procs": -1
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/ice_cube/effects/ice_cube_effect_0.tres",
+      "changed_key_values": {
+        "key": "stat_engineering",
+        "text_key": "EFFECT_ENEMY_PERCENT_DAMAGE_TAKEN",
+        "value": 20,
+        "max_stacks": -1,
+        "max_procs": -1
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/mutant/mutant_effect_2.tres",
+      "changed_key_values": { "value": 24 }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_tsyz_32",
+        "text_key": "你渴望飞向广袤无垠的宇宙",
+        "value": 20
+      }
+    }
+  ],
+  "starting_weapons": [ "weapon_torch_1", "weapon_wand_1", "weapon_lightning_shiv_1", "weapon_screwdriver_1", "weapon_wrench_1", "weapon_icicle_1", "weapon_brick_1", "weapon_mace_2" ],
+  "relative_icon_path": "icons/1762944079.png"
+}

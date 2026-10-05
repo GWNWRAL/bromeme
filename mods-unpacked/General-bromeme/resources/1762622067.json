@@ -1,0 +1,50 @@
+{
+  "name": "知识就是力量",
+  "price": 105,
+  "max_nb": 1,
+  "tier": 3,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_zsjsll_20",
+  "tags": [
+    "stat_ranged_damage",
+    "stat_melee_damage",
+    "stat_engineering",
+    "stat_elemental_damage"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/power_generator/power_generator_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_melee_damage",
+        "nb_stat_scaled": 2,
+        "stat_scaled": "stat_ranged_damage"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/power_generator/power_generator_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_melee_damage",
+        "nb_stat_scaled": 3,
+        "stat_scaled": "stat_engineering"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/power_generator/power_generator_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_melee_damage",
+        "nb_stat_scaled": 2,
+        "stat_scaled": "stat_elemental_damage"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 5
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1762622067.png"
+}

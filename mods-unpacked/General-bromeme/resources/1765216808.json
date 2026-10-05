@@ -1,0 +1,43 @@
+{
+  "name": "和孙笑川同流合污",
+  "price": 70,
+  "max_nb": 1,
+  "tier": 2,
+  "item_type": 1,
+  "unlocked_by_default": 1,
+  "my_id": "item_bromeme_jsly_385",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_lwyll_93",
+        "value": -100,
+        "text_key": "看来李文亚理论是无法发表了，但至少你还有钱拿(注意：获得该物品后无法继续李文亚的研究！)"
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_fkcs_87",
+        "value": -100,
+        "text_key": "[empty]"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/wheelbarrow/wheelbarrow_effect_2.tres",
+      "changed_key_values": {
+        "value": 40
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 9
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1765216808.png"
+}

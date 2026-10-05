@@ -1,0 +1,64 @@
+{
+  "name": "大理石雕塑",
+  "price": 102,
+  "max_nb": 1,
+  "tier": 3,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_dlsds_466",
+  "tags": [
+    "stat_armor",
+    "stat_crit_chance",
+    "gold_drops",
+    "stat_harvesting",
+    "stat_max_hp"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/statue/statue_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_crit_chance",
+        "value": 30
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/warrior_helmet/warrior_helmet_effect_1.tres",
+      "changed_key_values": {
+        "value": 4
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/evil_hat/evil_hat_effect_0.tres",
+      "changed_key_values": {
+        "value": 10
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/octopus/octopus_effect_1.tres",
+      "changed_key_values": {
+        "value": 14
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/wheat/wheat_effect_3.tres",
+      "changed_key_values": {
+        "value": 20
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/helmet/helmet_effect_2.tres",
+      "changed_key_values": {
+        "value": -40
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 4
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1761125272.png"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "赫",
+  "price": 1,
+  "max_nb": 1,
+  "tier": 3,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_orbs_he",
+  "no_loot": true,
+  "tags": [
+    "meme"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://mods-unpacked/General-bromeme/brolab_compat/contents/effects/orb_he_effect.tres",
+      "changed_key_values": {
+        "key": "",
+        "text_key": "BROMEME_EFF_HE",
+        "custom_key": "",
+        "value": 1,
+        "storage_method": 0,
+        "effect_sign": 0,
+        "scene_RESOURCE": {
+          "base_resource_path": "res://mods-unpacked/General-bromeme/content/pets/orb/orb_he.tscn",
+          "changed_key_values": {}
+        }
+      }
+    }
+  ],
+  "relative_icon_path": "icons/bromeme_he.png"
+}

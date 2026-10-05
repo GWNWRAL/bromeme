@@ -1,0 +1,42 @@
+{
+  "name": "大理石甲",
+  "price": 62,
+  "max_nb": 1,
+  "tier": 1,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_dlsj_125",
+  "tags": [
+    "stat_armor",
+    "stat_max_hp"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/duct_tape/duct_tape_effect_1.tres",
+      "changed_key_values": {
+        "value": 9
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/broken_mouth/broken_mouth_effect_1.tres",
+      "changed_key_values": {
+        "value": 9
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/helmet/helmet_effect_2.tres",
+      "changed_key_values": {
+        "value": -25
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 3
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1763216364.png"
+}

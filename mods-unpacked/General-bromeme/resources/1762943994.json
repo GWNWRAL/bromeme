@@ -1,0 +1,35 @@
+{
+  "name": "和平主义",
+  "price": 40,
+  "max_nb": 1,
+  "tier": 1,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_hpzy_446",
+  "tags": [
+    "economy"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/characters/pacifist/pacifist_effect_2.tres",
+      "changed_key_values": {
+        "value": 25
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/pacifist/pacifist_effect_4.tres",
+      "changed_key_values": {
+        "value": -15
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 6
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1762943994.png"
+}

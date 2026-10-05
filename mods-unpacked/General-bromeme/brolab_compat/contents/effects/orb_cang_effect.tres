@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://mods-unpacked/General-bromeme/brolab_compat/contents/effects/orb_pet_effect.gd" type="Script" id=1]
+[ext_resource path="res://mods-unpacked/General-bromeme/content/pets/orb/orb_weapon_stats.tres" type="Resource" id=2]
+
+[resource]
+script = ExtResource( 1 )
+key = ""
+text_key = ""
+value = 1
+custom_key = ""
+storage_method = 0
+effect_sign = 3
+custom_args = [  ]
+is_structure = false
+scene = null
+weapon_stats = ExtResource( 2 )
+pet_is_attract = true

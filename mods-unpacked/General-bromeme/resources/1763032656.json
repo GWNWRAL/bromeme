@@ -1,0 +1,41 @@
+{
+  "name": "小地图",
+  "price": 87,
+  "max_nb": 1,
+  "tier": 2,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_xdt_346",
+  "tags": [
+    "less_enemy_speed"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/characters/old/old_effect_3.tres",
+      "changed_key_values": {
+        "value": -20
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/snail/snail_effect_1.tres",
+      "changed_key_values": {
+        "value": -5
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/snail/snail_effect_2.tres",
+      "changed_key_values": {
+        "value": -5
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 2
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1763032656.png"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "巨口储蓄罐",
+  "price": 85,
+  "max_nb": 1,
+  "tier": 2,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_jkcxg_323",
+  "tags": [
+    "stat_harvesting"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/padding/padding_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_harvesting",
+        "nb_stat_scaled": 25
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 4
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1761963749.png"
+}

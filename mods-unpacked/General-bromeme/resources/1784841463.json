@@ -1,0 +1,46 @@
+{
+  "name": "大笑",
+  "price": 18,
+  "max_nb": -1,
+  "tier": 0,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_dx_109",
+  "tags": [
+    "more_enemies",
+    "xp_gain"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/peacock/peacock_effect_2.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/fertilizer/fertilizer_effect_1.tres",
+      "changed_key_values": {
+        "value": 5
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/celery_tea/effects/celery_tea_effect_1.tres",
+      "changed_key_values": {
+        "value": 20
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/peacock/peacock_effect_3.tres",
+      "changed_key_values": {
+        "value": 20
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 7
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1784841463.png"
+}

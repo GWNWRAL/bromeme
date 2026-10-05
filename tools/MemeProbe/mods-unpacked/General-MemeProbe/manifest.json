@@ -1,0 +1,17 @@
+{
+	"name": "MemeProbe",
+	"namespace": "General",
+	"version_number": "1.0.0",
+	"description": "temporary probe for bromeme meme stat",
+	"website_url": "",
+	"dependencies": [],
+	"extra": {
+		"godot": {
+			"incompatibilities": [],
+			"authors": [ "General" ],
+			"compatible_mod_loader_version": [ "6.2.2" ],
+			"compatible_game_version": [ "1.1.15.4" ],
+			"config_defaults": {}
+		}
+	}
+}

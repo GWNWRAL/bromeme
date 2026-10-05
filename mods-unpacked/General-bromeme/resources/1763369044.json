@@ -1,0 +1,36 @@
+{
+  "name": "奇怪的望远镜",
+  "price": 14,
+  "max_nb": 2,
+  "tier": 0,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_qgdwyj_33",
+  "tags": [
+    "economy",
+    "stat_range"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/spyglass/effects/spyglass_effect_1.tres",
+      "changed_key_values": {
+        "value": -5
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/spyglass/effects/spyglass_effect_0.tres",
+      "changed_key_values": {
+        "value": 5
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 5
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1763369044.png"
+}

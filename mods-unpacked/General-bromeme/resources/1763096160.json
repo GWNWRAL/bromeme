@@ -1,0 +1,45 @@
+{
+  "name": "愤怒",
+  "price": 71,
+  "max_nb": -1,
+  "tier": 2,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_fn_16",
+  "tags": [
+    "stat_attack_speed"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/characters/vampire/effects/vampire_effect_0.tres",
+      "changed_key_values": {
+        "value": 1,
+        "key": "stat_attack_speed",
+        "nb_stat_scaled": 2
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/saltwater/effects/saltwater_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_attack_speed"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/gummy_berserker/gummy_berserker_effect_1.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/gummy_berserker/gummy_berserker_effect_3.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 5
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1763096160.png"
+}

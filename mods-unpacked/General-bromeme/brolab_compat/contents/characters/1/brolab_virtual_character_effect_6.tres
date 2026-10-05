@@ -1,0 +1,34 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://mods-unpacked/General-bromeme/brolab_compat/contents/effects/convert_stats_at_wave.gd" type="Script" id=1]
+[ext_resource path="res://items/global/custom_arg.gd" type="Script" id=2]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+arg_index = 0
+arg_sign = 0
+arg_value = 0
+arg_format = 0
+arg_key = ""
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 2 )
+arg_index = 1
+arg_sign = 2
+arg_value = 0
+arg_format = 0
+arg_key = ""
+
+[resource]
+script = ExtResource( 1 )
+key = "materials"
+text_key = "BROLAB_EFFECT_CONVERT_STATS_AT_WAVE"
+value = 2
+custom_key = "brolab_effect_convert_stats_at_wave"
+storage_method = 1
+effect_sign = 1
+custom_args = [ SubResource( 1 ), SubResource( 2 ) ]
+pct_converted = 85.2
+to_stat = "stat_max_hp"
+to_value = 1
+target_wave = 1

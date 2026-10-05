@@ -1,0 +1,43 @@
+{
+  "name": "美食家",
+  "price": 22,
+  "max_nb": -1,
+  "tier": 1,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_msj_488",
+  "tags": [
+    "consumable_heal",
+    "consunable"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/penguin/effects/penguin_effect_1.tres",
+      "changed_key_values": {
+        "key": "consumable_heal",
+        "value": 1
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/characters/druid/effects/druid_effect_0c.tres",
+      "changed_key_values": {
+        "value": 1
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/alien_magic/alien_magic_effect_3.tres",
+      "changed_key_values": {
+        "value": -3
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 4
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1763023475.png"
+}

@@ -1,0 +1,51 @@
+{
+  "name": "粪肥",
+  "price": 8,
+  "max_nb": 10,
+  "tier": 0,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_ff_493",
+  "tags": [
+    "economy",
+    "stat_harvesting",
+    "exploration"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/tree/tree_effect_1.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/fertilizer/fertilizer_effect_1.tres",
+      "changed_key_values": {
+        "value": 3
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/gentle_alien/gentle_alien_effect_2.tres",
+      "changed_key_values": {
+        "value": 1
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_2.tres",
+      "changed_key_values": {
+        "value": -3
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/terrified_onion/terrified_onion_effect_2.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 5
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1761821741.png"
+}

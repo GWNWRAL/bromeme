@@ -1,0 +1,32 @@
+{
+	"name": "Aitato",
+	"namespace": "Aitato",
+	"version_number": "0.0.2",
+	"description": "Aitato - adds new characters and content to Brotato. First character: DeepSeek (\u5927\u80a5\u9c7c), who starts with a Scared Sausage and has -25% Elemental Damage modifications. When she stops moving she falls asleep: +10 HP Regeneration, and her art is swapped for a sleeping pose. 0.0.2: the starting weapon pool is now validated before use (scene must instantiate and satisfy vanilla weapon.gd's $Sprite/Hitbox contract), because a broken weapon scene makes this build kill the process with 0xC0000005 at Brotato.exe+0x1F8D28A on a method call against a null value.",
+	"website_url": "",
+	"dependencies": [
+		"Darkly77-ContentLoader"
+	],
+	"extra": {
+		"godot": {
+			"authors": [
+				"Aitato"
+			],
+			"incompatibilities": [],
+			"optional_dependencies": [],
+			"load_before": [],
+			"compatible_mod_loader_version": [
+				"6.0.0"
+			],
+			"compatible_game_version": [
+				"1.1.15.4"
+			],
+			"tags": [
+				"characters",
+				"items"
+			],
+			"config_schema": {},
+			"description_rich": ""
+		}
+	}
+}

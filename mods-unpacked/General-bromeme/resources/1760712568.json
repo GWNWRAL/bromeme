@@ -1,0 +1,49 @@
+{
+  "name": "篮球",
+  "price": 145,
+  "max_nb": 1,
+  "tier": 3,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_character_basketball_318",
+  "tags": [
+    "stat_ranged_damage"
+  ],
+  "wanted_tags": [
+    "stat_percent_damage"
+  ],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/ricochet/ricochet_effect_1.tres",
+      "changed_key_values": {
+        "value": 2
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/seashell/effects/seashell_effect_1.tres",
+      "changed_key_values": {
+        "value": -40
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/sharp_bullet/sharp_bullet_effect_2.tres",
+      "changed_key_values": {
+        "value": -50
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/boxing_glove/boxing_glove_effect_1.tres",
+      "changed_key_values": {
+        "value": 4
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 6
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1760712568.png"
+}

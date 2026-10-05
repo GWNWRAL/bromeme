@@ -1,0 +1,38 @@
+{
+  "name": "肘",
+  "price": 72,
+  "max_nb": 1,
+  "tier": 2,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_item_zhou_435",
+  "tags": [
+    "stat_melee_damage"
+  ],
+  "wanted_tags": [
+    "stat_percent_damage"
+  ],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/coil/effects/coil_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_melee_damage",
+        "perm_stats_only": false
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/coil/effects/coil_effect_0.tres",
+      "changed_key_values": {
+        "value": 2
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 8
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1760709365.png"
+}

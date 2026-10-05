@@ -1,0 +1,34 @@
+{
+  "name": "机甲研究",
+  "price": 100,
+  "max_nb": 10,
+  "tier": 1,
+  "item_type": 1,
+  "unlocked_by_default": 1,
+  "my_id": "item_bromeme_jjyj_226",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/book/book_effect_1.tres",
+      "changed_key_values": {
+        "value": 5
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_chj_506",
+        "text_key": "很快你将和你的第一个机甲见面"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 3
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1783698244.png"
+}

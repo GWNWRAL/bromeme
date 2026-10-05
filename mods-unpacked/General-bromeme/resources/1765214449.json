@@ -1,0 +1,53 @@
+{
+  "name": "探索宇宙",
+  "price": 89,
+  "max_nb": 5,
+  "tier": 3,
+  "item_type": 1,
+  "unlocked_by_default": 1,
+  "my_id": "item_bromeme_tsyz_32",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_ddxq_135",
+        "value": 3,
+        "text_key": "[empty]"
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_hlxq_111",
+        "text_key": "[empty]",
+        "value": 3
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_hlxq_171",
+        "text_key": "[empty]",
+        "value": 4
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_yzdjt_427",
+        "value": 1,
+        "text_key": "从此土豆的童年结束了"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 6
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1765214449.png"
+}

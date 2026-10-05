@@ -1,0 +1,61 @@
+{
+  "name": "末日机甲",
+  "price": 200,
+  "max_nb": -1,
+  "tier": 2,
+  "item_type": 1,
+  "unlocked_by_default": 1,
+  "my_id": "item_bromeme_mrjj_14",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/reinforced_steel/effects/reinforced_steel_effect_0.tres",
+      "changed_key_values": {
+        "value": 8
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/riposte/riposte_effect_0.tres",
+      "changed_key_values": {
+        "value": 16
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/warrior_helmet/warrior_helmet_effect_1.tres",
+      "changed_key_values": {
+        "value": 5
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/sunglasses/sunglasses_effect_1.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/acid/acid_effect_1.tres",
+      "changed_key_values": {
+        "value": 10
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/book/book_effect_1.tres",
+      "changed_key_values": {
+        "value": 10
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cyclops_worm/cyclops_worm_effect_1.tres",
+      "changed_key_values": {
+        "value": 20
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 7
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1783696888.png"
+}

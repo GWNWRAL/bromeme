@@ -1,0 +1,49 @@
+{
+  "name": "身法",
+  "price": 50,
+  "max_nb": 1,
+  "tier": 1,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_sf_134",
+  "tags": [
+    "stat_dodge"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/gambling_token/gambling_token_effect_1.tres",
+      "changed_key_values": {
+        "value": 5
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/power_generator/power_generator_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_dodge",
+        "nb_stat_scaled": 5,
+        "stat_scaled": "stat_melee_damage"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/power_generator/power_generator_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_dodge",
+        "nb_stat_scaled": 5,
+        "stat_scaled": "stat_ranged_damage"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/power_generator/power_generator_effect_2.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 5
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1763061428.png"
+}

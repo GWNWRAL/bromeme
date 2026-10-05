@@ -1,0 +1,67 @@
+{
+  "name": "大卫戴",
+  "price": 1,
+  "max_nb": -1,
+  "tier": 0,
+  "item_type": 0,
+  "unlocked_by_default": 0,
+  "my_id": "character_bromeme_dwd_300",
+  "tags": [ "stat_elemental_damage", "stat_engineering" ],
+  "wanted_tags": [ "stat_percent_damage" ],
+  "datas": [
+    {
+      "base_resource_path": "res://dlcs/dlc_1/characters/druid/effects/druid_effect_0c.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/blood_donation/blood_donation_effect_2.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/characters/druid/effects/druid_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_max_hp",
+        "value2": 33
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/characters/druid/effects/druid_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_speed",
+        "value": -1,
+        "value2": 10
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/vigilante_ring/vigilante_ring_effect_1.tres",
+      "changed_key_values": {
+        "key": "pickup_range",
+        "value": 15
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/entrepreneur/entrepreneur_effect_4.tres",
+      "changed_key_values": { "value": -33 }
+    },
+    {
+      "base_resource_path": "res://items/characters/doctor/doctor_effect_6.tres",
+      "changed_key_values": { "value": -33 }
+    },
+    {
+      "base_resource_path": "res://items/characters/mage/mage_effect_3.tres",
+      "changed_key_values": {
+        "key": "item_garden",
+        "value": 3
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/ghost/ghost_effect_3.tres",
+      "changed_key_values": {
+        "value": 10,
+        "effect_sign": 1
+      }
+    }
+  ],
+  "starting_weapons": [ "weapon_smg_1", "weapon_scissors_1", "weapon_wrench_1", "weapon_medical_gun_1", "weapon_shredder_1", "weapon_ghost_scepter_1", "weapon_chopper_1", "weapon_plank_1", "weapon_pruner_1", "weapon_brick_1", "weapon_spoon_1" ],
+  "relative_icon_path": "icons/1761493042.png"
+}

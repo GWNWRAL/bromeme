@@ -1,0 +1,42 @@
+{
+  "name": "云面大果",
+  "price": 120,
+  "max_nb": 1,
+  "tier": 3,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_ymdg_56",
+  "tags": [
+    "stat_elemental_damage"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://dlcs/dlc_1/characters/druid/effects/druid_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_elemental_damage",
+        "value2": 20
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/characters/druid/effects/druid_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_max_hp",
+        "value2": 8,
+        "value": -1
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/octopus/octopus_effect_3.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 7
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1762337302.png"
+}

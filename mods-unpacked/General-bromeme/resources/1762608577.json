@@ -1,0 +1,30 @@
+{
+  "name": "大脚",
+  "price": 49,
+  "max_nb": 2,
+  "tier": 1,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_dj_504",
+  "tags": [
+    "stat_speed"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://dlcs/dlc_1/characters/hiker/effects/hiker_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_speed",
+        "value2": 100
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 7
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1762608577.png"
+}

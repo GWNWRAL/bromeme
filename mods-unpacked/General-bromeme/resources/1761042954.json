@@ -1,0 +1,30 @@
+{
+  "name": "猪猪侠",
+  "price": 1,
+  "max_nb": -1,
+  "tier": 0,
+  "item_type": 0,
+  "unlocked_by_default": 0,
+  "my_id": "character_bromeme_1_163",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/characters/fisherman/fisherman_effect_1.tres",
+      "changed_key_values": { "key": "item_piggy_bank" }
+    },
+    {
+      "base_resource_path": "res://items/all/bowler_hat/bowler_hat_effect_2.tres",
+      "changed_key_values": { "value": -10 }
+    },
+    {
+      "base_resource_path": "res://items/characters/mutant/mutant_effect_2.tres",
+      "changed_key_values": { "value": 30 }
+    },
+    {
+      "base_resource_path": "res://items/characters/mage/mage_effect_3.tres",
+      "changed_key_values": { "key": "item_piggy_bank" }
+    }
+  ],
+  "relative_icon_path": "icons/1761042954.png"
+}

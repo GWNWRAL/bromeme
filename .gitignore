@@ -1,0 +1,29 @@
+# 构建/检查中间产物
+__pycache__/
+*.pyc
+.godot/
+
+# 本地存档与备份（不随仓库分发）
+run_v3_*.json
+save_v3_*.json
+*.json.bak
+save_backup*/
+save_before*/
+
+# 编辑器与系统文件
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+desktop.ini
+
+# 大体积一次性数据转储
+tools/pck_list.txt
+tools/dlc_list.txt
+
+# ⚠️ API 密钥：绝不入库（GitHub 秘密扫描会拦截推送）
+tools/aiart/raw_*.json
+*_api_key*.json
+*credentials*.json
+.env
+.env.*

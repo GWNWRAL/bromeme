@@ -1,0 +1,42 @@
+{
+  "name": "巧乐兹",
+  "price": 35,
+  "max_nb": -1,
+  "tier": 1,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_qlz_30",
+  "tags": [
+    "stat_elemental_damage",
+    "stat_speed"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/boiling_water/boiling_water_effect_1.tres",
+      "changed_key_values": {
+        "value": 4
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/jetpack/jetpack_effect_1.tres",
+      "changed_key_values": {
+        "value": 8
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/boiling_water/boiling_water_effect_2.tres",
+      "changed_key_values": {
+        "value": -8
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 3
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1783442157.png"
+}

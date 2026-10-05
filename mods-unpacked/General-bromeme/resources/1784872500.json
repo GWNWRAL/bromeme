@@ -1,0 +1,71 @@
+{
+  "name": "奶蛙",
+  "price": 1,
+  "max_nb": -1,
+  "tier": 0,
+  "item_type": 0,
+  "unlocked_by_default": 0,
+  "my_id": "character_bromeme_nw_115",
+  "tags": [
+    "xp_gain"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/characters/fisherman/fisherman_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_dx_109"
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/mutant/mutant_effect_1.tres",
+      "changed_key_values": {
+        "value": -50
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/mutant/mutant_effect_2.tres",
+      "changed_key_values": {
+        "value": 40
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/fisherman/fisherman_effect_2.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_dx_109",
+        "value": -110
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 30,
+        "text_key": "",
+        "custom_key": "",
+        "storage_method": 0,
+        "effect_sign": 0
+      }
+    }
+  ],
+  "starting_weapons": [
+    "weapon_fist_1",
+    "weapon_hand_1",
+    "weapon_knife_1",
+    "weapon_rock_1",
+    "weapon_spear_1",
+    "weapon_stick_1",
+    "weapon_torch_1",
+    "weapon_pistol_1",
+    "weapon_taser_1",
+    "weapon_wand_1",
+    "weapon_ghost_flint_1",
+    "weapon_scissors_1",
+    "weapon_screwdriver_1",
+    "weapon_wrench_1",
+    "weapon_medical_gun_1",
+    "weapon_sharp_tooth_1",
+    "weapon_rail_gun_1"
+  ],
+  "relative_icon_path": "icons/1784872500.png"
+}

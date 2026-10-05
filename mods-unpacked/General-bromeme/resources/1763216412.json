@@ -1,0 +1,74 @@
+{
+  "name": "灭火器",
+  "price": 75,
+  "max_nb": 1,
+  "tier": 2,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_mhq_320",
+  "tags": [
+    "stat_engineering",
+    "stat_melee_damage",
+    "stat_ranged_damage",
+    "stat_armor"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/dynamite/dynamite_effect_1.tres",
+      "changed_key_values": {
+        "value": -25
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/plastic_explosive/plastic_explosive_effect_1.tres",
+      "changed_key_values": {
+        "value": -25
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/campfire/campfire_effect_1.tres",
+      "changed_key_values": {
+        "value": -5
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/frozen_heart/effects/frozen_heart_effect_3.tres",
+      "changed_key_values": {
+        "value": -50
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/riposte/riposte_effect_0.tres",
+      "changed_key_values": {
+        "value": 15
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/riposte/riposte_effect_0.tres",
+      "changed_key_values": {
+        "key": "stat_ranged_damage",
+        "value": 8
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/riposte/riposte_effect_0.tres",
+      "changed_key_values": {
+        "key": "stat_engineering",
+        "value": 8
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/leather_vest/leather_vest_effect_1.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 3
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1763216412.png"
+}

@@ -1,0 +1,46 @@
+{
+  "name": "纯正的冰",
+  "price": 18,
+  "max_nb": -1,
+  "tier": 1,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_czdb_158",
+  "tags": [
+    "stat_percent_damage",
+    "stat_attack_speed"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/celery_tea/effects/celery_tea_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_percent_damage",
+        "value": 40,
+        "effect_sign": 0
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/celery_tea/effects/celery_tea_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_attack_speed",
+        "value": 40,
+        "effect_sign": 0
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "value": -3
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 6
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1763025652.png"
+}

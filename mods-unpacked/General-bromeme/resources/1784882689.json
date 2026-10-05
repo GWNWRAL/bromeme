@@ -1,0 +1,70 @@
+{
+  "name": "不死老表",
+  "price": 1,
+  "max_nb": -1,
+  "tier": 0,
+  "item_type": 0,
+  "unlocked_by_default": 0,
+  "my_id": "character_bromeme_bslb_42",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/characters/mage/mage_effect_3.tres",
+      "changed_key_values": {
+        "key": "item_anvil"
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/arms_dealer/arms_dealer_effect_2.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/recycling_machine/recycling_machine_effect_1.tres",
+      "changed_key_values": {
+        "value": 100
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/mage/mage_effect_3.tres",
+      "changed_key_values": {
+        "key": "item_wisdom"
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/mage/mage_effect_3.tres",
+      "changed_key_values": {
+        "key": "item_eyepatch"
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/multitasker/multitasker_effect_1.tres",
+      "changed_key_values": {
+        "value": 4
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/doctor/doctor_effect_6.tres",
+      "changed_key_values": {}
+    }
+  ],
+  "starting_weapons": [
+    "weapon_knife_1",
+    "weapon_pistol_1",
+    "weapon_taser_1",
+    "weapon_ghost_flint_1",
+    "weapon_scissors_1",
+    "weapon_screwdriver_1",
+    "weapon_wrench_1",
+    "weapon_medical_gun_1",
+    "weapon_ghost_axe_1",
+    "weapon_ghost_scepter_1",
+    "weapon_chopper_1",
+    "weapon_pruner_1",
+    "weapon_revolver_1",
+    "weapon_icicle_1",
+    "weapon_brick_2",
+    "weapon_javelin_1"
+  ],
+  "relative_icon_path": "icons/1784882689.png"
+}

@@ -1,0 +1,101 @@
+{
+  "name": "雪豹",
+  "price": 90,
+  "max_nb": 1,
+  "tier": 2,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_xb_478",
+  "tags": [
+    "stat_speed",
+    "pet",
+    "stat_melee_damage",
+    "explosive",
+    "stat_curse"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/bonk_dog/bonk_dog_effect_0.tres",
+      "changed_key_values": {
+        "text_key": "生成一只雪豹宠物，会造成{0}（{1}）伤害。它每{2}秒钟会进行一次冲刺攻击，在范围内造成{3}（{4}）爆炸伤害",
+        "custom_key": "bromeme_xuebao_pet",
+        "weapon_stats_RESOURCE": {
+          "base_resource_path": "res://entities/units/pet/bonk_dog/bonk_dog_weapon_stats.tres",
+          "changed_key_values": {
+            "scaling_stats": [
+              [
+                436281442,
+                2
+              ],
+              [
+                4170350086,
+                0.5
+              ],
+              [
+                4033990219,
+                0.5
+              ],
+              [
+                156323247,
+                0.5
+              ],
+              [
+                1332121877,
+                0.5
+              ]
+            ],
+            "damage": 25,
+            "cooldown": 20,
+            "sound_db_mod": -5
+          }
+        },
+        "explosion_effect_RESOURCE": {
+          "base_resource_path": "res://entities/units/pet/bonk_dog/bonk_dog_exploding_effect.tres",
+          "changed_key_values": {
+            "stats_RESOURCE": {
+              "base_resource_path": "res://entities/units/pet/bonk_dog/bonk_dog_explosion_stats.tres",
+              "changed_key_values": {
+                "damage": 25,
+                "scaling_stats": [
+                  [
+                    436281442,
+                    2
+                  ],
+                  [
+                    4170350086,
+                    0.5
+                  ],
+                  [
+                    4033990219,
+                    0.5
+                  ],
+                  [
+                    156323247,
+                    0.5
+                  ],
+                  [
+                    1332121877,
+                    0.5
+                  ]
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/fin/fin_effect_1.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 6
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1762954457.png"
+}

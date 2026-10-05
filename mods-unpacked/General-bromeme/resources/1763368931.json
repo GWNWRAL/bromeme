@@ -1,0 +1,36 @@
+{
+  "name": "黄果冻",
+  "price": 12,
+  "max_nb": -1,
+  "tier": 0,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_hgd_185",
+  "tags": [
+    "stat_harvesting"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/jelly/effects/jelly_effect_0.tres",
+      "changed_key_values": {
+        "key": "stat_harvesting",
+        "value": 1
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/fertilizer/fertilizer_effect_1.tres",
+      "changed_key_values": {
+        "value": 1
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 4
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1763368931.png"
+}

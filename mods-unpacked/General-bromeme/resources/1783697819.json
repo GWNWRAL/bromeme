@@ -1,0 +1,51 @@
+{
+  "name": "初号机",
+  "price": 200,
+  "max_nb": 1,
+  "tier": 3,
+  "item_type": 1,
+  "unlocked_by_default": 1,
+  "my_id": "item_bromeme_chj_506",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/big_arms/big_arms_effect_1.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/acid/acid_effect_1.tres",
+      "changed_key_values": {
+        "value": 12
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/duct_tape/duct_tape_effect_1.tres",
+      "changed_key_values": {
+        "value": 3
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/book/book_effect_1.tres",
+      "changed_key_values": {
+        "value": 5
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_mrjj_14",
+        "text_key": "你学会了机甲的制造",
+        "value": 3
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 9
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1783697819.png"
+}

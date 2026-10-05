@@ -1,0 +1,39 @@
+{
+  "name": "怪物千层饼",
+  "price": 11,
+  "max_nb": 3,
+  "tier": 0,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_gwqcb_477",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/gentle_alien/gentle_alien_effect_2.tres",
+      "changed_key_values": {
+        "value": 5
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/celery_tea/effects/celery_tea_effect_1.tres",
+      "changed_key_values": {
+        "value": 20
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/bowler_hat/bowler_hat_effect_2.tres",
+      "changed_key_values": {
+        "value": 3
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 6
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1762951214.png"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "游侠徽章",
+  "price": 102,
+  "max_nb": 1,
+  "tier": 2,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_hz_189",
+  "tags": [
+    "stat_ranged_damage"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/characters/ranger/ranger_effect_4.tres",
+      "changed_key_values": {
+        "value": 15
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 2
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1763053554.png"
+}

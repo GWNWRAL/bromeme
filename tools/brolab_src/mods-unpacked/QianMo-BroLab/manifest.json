@@ -1,0 +1,50 @@
+{
+	"name": "BroLab",
+	"namespace": "QianMo",
+	"version_number": "1.0.5",
+	"description": "DIY your own characters and items.",
+	"website_url": "",
+	"dependencies": [
+
+	],
+	"extra": {
+		"godot": {
+			"authors": [
+				"QianMo"
+			],
+			"optional_dependencies": [
+
+			],
+			"compatible_game_version": [
+				"1.0.0.0"
+			],
+			"compatible_mod_loader_version": [
+				"1.0.0"
+			],
+			"incompatibilities": [
+
+			],
+			"load_before": [
+
+			],
+			"tags": [
+
+			],
+			"config_schema": {
+				"title": "brolab_config",
+				"description": "Config for BroLab",
+				"type": "object",
+				"properties": {
+					"BROLAB_ENABLE_SPECIAL_MECHANISMS": {
+						"type": "boolean",
+						"title": "BROLAB_ENABLE_SPECIAL_MECHANISMS",
+						"tooltip": "BROLAB_ENABLE_SPECIAL_MECHANISMS_TOOLTIP",
+						"default": false
+					}
+				}
+			},
+			"description_rich": "",
+			"image": null
+		}
+	}
+}

@@ -1,0 +1,39 @@
+{
+  "name": "直升机",
+  "price": 135,
+  "max_nb": 1,
+  "tier": 2,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_item_zsj_183",
+  "tags": [
+    "stat_speed"
+  ],
+  "wanted_tags": [
+    "stat_percent_damage"
+  ],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/power_generator/power_generator_effect_1.tres",
+      "changed_key_values": {
+        "stat_scaled": "stat_attack_speed",
+        "key": "stat_speed",
+        "value": 1
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/glass_cannon/glass_cannon_effect_2.tres",
+      "changed_key_values": {
+        "value": -3
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 4
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1760708558.png"
+}

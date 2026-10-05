@@ -1,0 +1,49 @@
+{
+  "name": "宜居星球",
+  "price": 99,
+  "max_nb": -1,
+  "tier": 2,
+  "item_type": 1,
+  "unlocked_by_default": 1,
+  "my_id": "item_bromeme_hlxq_111",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/power_generator/power_generator_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_hp_regeneration",
+        "nb_stat_scaled": 10,
+        "stat_scaled": "stat_max_hp"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/power_generator/power_generator_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_harvesting",
+        "nb_stat_scaled": 10,
+        "stat_scaled": "stat_max_hp"
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/well_rounded/well_rounded_effect_1.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_yzdjt_427",
+        "text_key": "[EMPTY]",
+        "value": 1
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 5
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1765213612.png"
+}

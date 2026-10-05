@@ -1,0 +1,42 @@
+{
+  "name": "火腿棒",
+  "price": 68,
+  "max_nb": 1,
+  "tier": 1,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_htb_17",
+  "tags": [
+    "stat_melee_damage",
+    "stat_hp_regeneration"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/black_belt/black_belt_effect_2.tres",
+      "changed_key_values": {
+        "value": 8
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/campfire/campfire_effect_2.tres",
+      "changed_key_values": {
+        "value": 8
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/helmet/helmet_effect_2.tres",
+      "changed_key_values": {
+        "value": -8
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 4
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1763216346.png"
+}

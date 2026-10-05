@@ -1,0 +1,55 @@
+{
+  "name": "悍匪头套",
+  "price": 200,
+  "max_nb": 1,
+  "tier": 3,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_hftt_308",
+  "tags": [
+    "economy"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://dlcs/dlc_1/characters/gangster/effects/gangster_effect_0.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/characters/gangster/effects/gangster_effect_0b.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/scar/scar_effect_2.tres",
+      "changed_key_values": {
+        "value": -20
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/mushroom/mushroom_effect_2.tres",
+      "changed_key_values": {
+        "value": -20
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/insanity/insanity_effect_2.tres",
+      "changed_key_values": {
+        "value": -20
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/goat_skull/goat_skull_effect_2.tres",
+      "changed_key_values": {
+        "value": -20
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 5
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1761562730.png"
+}

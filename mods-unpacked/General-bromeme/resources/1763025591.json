@@ -1,0 +1,40 @@
+{
+  "name": "瞬息活力",
+  "price": 7,
+  "max_nb": -1,
+  "tier": 0,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_sxhl_315",
+  "tags": [
+    "stat_percent_damage",
+    "stat_armor"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/celery_tea/effects/celery_tea_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_percent_damage",
+        "value": 20,
+        "effect_sign": 0
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/celery_tea/effects/celery_tea_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_armor",
+        "value": 2,
+        "effect_sign": 0
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 4
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1763025591.png"
+}

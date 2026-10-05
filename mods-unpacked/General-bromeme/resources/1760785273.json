@@ -1,0 +1,57 @@
+{
+  "name": "嘉豪",
+  "price": 1,
+  "max_nb": -1,
+  "tier": 0,
+  "item_type": 0,
+  "unlocked_by_default": 0,
+  "my_id": "character_bromeme_character_jiahao_131",
+  "tags": [
+    "stat_luck"
+  ],
+  "wanted_tags": [
+    "stat_luck"
+  ],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/ice_cube/effects/ice_cube_effect_0.tres",
+      "changed_key_values": {
+        "key": "stat_luck",
+        "value": 100,
+        "duration_secs": 3
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/characters/builder/effects/builder_effect_3.tres",
+      "changed_key_values": {
+        "value": -40
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/coffee/coffee_effect_2.tres",
+      "changed_key_values": {
+        "value": -15
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/characters/creature/effects/creature_effect_4.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 30,
+        "text_key": "",
+        "custom_key": "",
+        "storage_method": 0,
+        "effect_sign": 0
+      }
+    }
+  ],
+  "starting_weapons": [
+    "weapon_flute_1",
+    "weapon_lute_1"
+  ],
+  "relative_icon_path": "icons/1760785273.png"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "DebugMenu",
+  "namespace": "Yoko",
+  "version_number": "1.1.0",
+  "description": "An in-game debug menu for testing Brotato player states, equipment, enemies, waves, and progression.",
+  "website_url": "",
+  "dependencies": [],
+  "extra": {
+    "godot": {
+      "authors": [
+        "CYoJkoY"
+      ],
+      "optional_dependencies": [],
+      "compatible_game_version": [
+        "1.15.4"
+      ],
+      "compatible_mod_loader_version": [
+        "6.3.0"
+      ],
+      "incompatibilities": [],
+      "load_before": [],
+      "tags": [
+        "debug",
+        "development",
+        "testing"
+      ],
+      "config_schema": {},
+      "description_rich": "An in-game debug menu for testing Brotato player states, equipment, enemies, waves, and progression.",
+      "image": null
+    }
+  }
+}

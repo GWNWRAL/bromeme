@@ -1,0 +1,45 @@
+{
+  "name": "奇怪的蛇",
+  "price": 75,
+  "max_nb": 1,
+  "tier": 2,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_qgds_421",
+  "tags": [
+    "stat_elemental_damage",
+    "stat_engineering"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/strange_book/strange_book_effect_1.tres",
+      "changed_key_values": {
+        "key": "burning_cooldown_reduction",
+        "nb_stat_scaled": 3,
+        "stat_scaled": "stat_engineering"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/strange_book/strange_book_effect_1.tres",
+      "changed_key_values": {
+        "key": "structure_attack_speed",
+        "nb_stat_scaled": 3
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/metal_plate/metal_plate_effect_2.tres",
+      "changed_key_values": {
+        "value": -5
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 6
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1762266645.png"
+}

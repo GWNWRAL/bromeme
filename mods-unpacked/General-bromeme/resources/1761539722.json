@@ -1,0 +1,37 @@
+{
+  "name": "炮塔生产线",
+  "price": 211,
+  "max_nb": 1,
+  "tier": 3,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_ptscx_87",
+  "tags": [
+    "stat_engineering",
+    "structure"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/diploma/diploma_effect_1.tres",
+      "changed_key_values": {
+        "value": 5
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/fisherman/fisherman_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_turret_rocket",
+        "value": 1
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 5
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1761539722.png"
+}

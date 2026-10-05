@@ -1,0 +1,46 @@
+{
+  "name": "火药",
+  "price": 17,
+  "max_nb": -1,
+  "tier": 0,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_hy_39",
+  "tags": [
+    "stat_elemental_damage",
+    "explosive"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/dynamite/dynamite_effect_1.tres",
+      "changed_key_values": {
+        "value": 6
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/plastic_explosive/plastic_explosive_effect_1.tres",
+      "changed_key_values": {
+        "value": 6
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/campfire/campfire_effect_1.tres",
+      "changed_key_values": {
+        "value": 1
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/gummy_berserker/gummy_berserker_effect_3.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 2
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1762336126.png"
+}

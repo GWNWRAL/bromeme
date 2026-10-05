@@ -1,0 +1,31 @@
+{
+  "name": "一次性护盾",
+  "price": 19,
+  "max_nb": -1,
+  "tier": 1,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_ycxhd_205",
+  "tags": [
+    "stat_armor"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/peacock/peacock_effect_3.tres",
+      "changed_key_values": {
+        "key": "stat_armor",
+        "value": 10,
+        "effect_sign": 0
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 4
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1763025632.png"
+}

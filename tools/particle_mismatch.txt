@@ -1,0 +1,5 @@
+﻿=== ���ӳ������ڵ����� vs �ű����� ===
+MoreElites-BossPack-0.1.2.zip                  BergiHouse-MoreElitesBossPack/content/elites/mage_elite/bu node=Particles2D    script_base=CPUParticles2D       !! ��ƥ�� -> instance() ���� null
+MoreElites-BossPack-0.1.2.zip                  BergiHouse-MoreElitesBossPack/content/elites/sniper_elite/ node=Particles2D    script_base=CPUParticles2D       !! ��ƥ�� -> instance() ���� null
+
+�ϼ�: 2  ��ƥ��: 2

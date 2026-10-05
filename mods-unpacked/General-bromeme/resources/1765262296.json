@@ -1,0 +1,46 @@
+{
+  "name": "”李文亚“号",
+  "price": 75,
+  "max_nb": 5,
+  "tier": 3,
+  "item_type": 1,
+  "unlocked_by_default": 1,
+  "my_id": "item_bromeme_lwyh_373",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_tsyz_32",
+        "text_key": "飞向深空吧！",
+        "value": 20
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/power_generator/power_generator_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_attack_speed",
+        "value": 1,
+        "stat_scaled": "stat_speed",
+        "nb_stat_scaled": 20
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/fin/fin_effect_1.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/helmet/helmet_effect_1.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 7
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1765262296.png"
+}

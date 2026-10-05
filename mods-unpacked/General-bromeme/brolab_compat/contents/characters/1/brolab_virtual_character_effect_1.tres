@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://mods-unpacked/General-bromeme/brolab_compat/contents/effects/receive_items_at_wave.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+key = "brolab_effect_receive_item_at_wave"
+text_key = "BROLAB_EFFECT_RECEIVE_ITEM_AT_WAVE"
+value = 1
+custom_key = ""
+storage_method = 0
+effect_sign = 3
+custom_args = [  ]
+brolab_receive_item_id = "item_acid"
+brolab_receive_item_wave = 5
+brolab_cursed_item = false

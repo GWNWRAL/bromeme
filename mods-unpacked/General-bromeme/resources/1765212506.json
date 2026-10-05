@@ -1,0 +1,119 @@
+{
+  "name": "宇宙的终极答案",
+  "price": 1800,
+  "max_nb": 1,
+  "tier": 3,
+  "item_type": 1,
+  "unlocked_by_default": 1,
+  "my_id": "item_bromeme_yzdzzda_279",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/sifds_relic/sifds_relic_effect_0.tres",
+      "changed_key_values": {
+        "value": 42
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/alloy/alloy_effect_1.tres",
+      "changed_key_values": {
+        "value": 42
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/alloy/alloy_effect_2.tres",
+      "changed_key_values": {
+        "value": 42
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/alloy/alloy_effect_2b.tres",
+      "changed_key_values": {
+        "value": 42
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/alloy/alloy_effect_3.tres",
+      "changed_key_values": {
+        "value": 42
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/alloy/alloy_effect_4.tres",
+      "changed_key_values": {
+        "value": 42
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/alloy/alloy_effect_5.tres",
+      "changed_key_values": {
+        "value": 42
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/acid/acid_effect_1.tres",
+      "changed_key_values": {
+        "value": 42
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/banner/banner_effect_1.tres",
+      "changed_key_values": {
+        "value": 42
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/banner/banner_effect_2.tres",
+      "changed_key_values": {
+        "value": 42
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/bandana/bandana_effect_2.tres",
+      "changed_key_values": {
+        "value": 42
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/potato/potato_effect_2.tres",
+      "changed_key_values": {
+        "value": 42
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/potato/potato_effect_2b.tres",
+      "changed_key_values": {
+        "value": 42
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/potato/potato_effect_3b.tres",
+      "changed_key_values": {
+        "value": 42
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/potato/potato_effect_5.tres",
+      "changed_key_values": {
+        "value": 42
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres",
+      "changed_key_values": {
+        "key": "item_bromeme_yzdjt_427",
+        "text_key": "这就是宇宙的终极答案",
+        "value": -100
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 8
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1765212506.png"
+}

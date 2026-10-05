@@ -1,0 +1,22 @@
+{
+	"name": "KeyScan",
+	"namespace": "Probe",
+	"version_number": "0.0.1",
+	"description": "Diagnostic mod: scans codex description panels for untranslated keys.",
+	"website_url": "",
+	"dependencies": [],
+	"extra": {
+		"godot": {
+			"authors": [
+				"General"
+			],
+			"compatible_mod_loader_version": [
+				"6.2.2"
+			],
+			"compatible_game_version": [
+				"1.1.15.4"
+			],
+			"config_defaults": {}
+		}
+	}
+}

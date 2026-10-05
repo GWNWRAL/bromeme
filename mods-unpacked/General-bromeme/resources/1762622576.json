@@ -1,0 +1,40 @@
+{
+  "name": "哑铃",
+  "price": 46,
+  "max_nb": 1,
+  "tier": 1,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_yl_111",
+  "tags": [
+    "stat_melee_damage"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/vigilante_ring/vigilante_ring_effect_1.tres",
+      "changed_key_values": {
+        "value": 2,
+        "key": "stat_melee_damage"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/statue/statue_effect_2.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/missile/missile_effect_2.tres",
+      "changed_key_values": {
+        "value": -5
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 2
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1762622576.png"
+}

@@ -1,0 +1,49 @@
+[01:56:23] === 批量开始：1 张，并发 1，模型 doubao-seedream-4-0-250828 ===
+[01:56:24] FAIL 1761055351     烟            attempt1: HTTP 404: {"error":{"code":"ModelNotOpen","message":"Your account 2130885647 has not activated the model doubao-seedream-4-0-250828. Please activate the model s
+[01:56:28] FAIL 1761055351     烟            attempt2: HTTP 404: {"error":{"code":"ModelNotOpen","message":"Your account 2130885647 has not activated the model doubao-seedream-4-0-250828. Please activate the model s
+[01:56:32] FAIL 1761055351     烟            attempt3: HTTP 404: {"error":{"code":"ModelNotOpen","message":"Your account 2130885647 has not activated the model doubao-seedream-4-0-250828. Please activate the model s
+[01:56:36] GIVEUP 烟            HTTP 404: {"error":{"code":"ModelNotOpen","message":"Your account 2130885647 has not activated the model doubao-seedream-4-0-250828. Please activate the model s
+[01:56:36] === 批量结束：成功 0 / 1 ===
+[01:56:41] === 批量开始：1 张，并发 1，模型 doubao-seedream-5-0-pro-260628 ===
+[01:57:26] OK   1761055351     烟            normal  45.0s -> 1761055351.png
+[01:57:26] === 批量结束：成功 1 / 1 ===
+[01:57:29] === 批量开始：34 张，并发 3，模型 doubao-seedream-5-0-pro-260628 ===
+[01:58:09] FAIL 1761493042     大卫戴          attempt1: HTTP 400: {"error":{"code":"OutputImageSensitiveContentDetected","message":"The request failed because the output image may contain sensitive information. Reque
+[01:58:15] OK   1760785273     嘉豪           head    45.8s -> 1760785273.png
+[01:58:20] OK   1762266899     牢大           head    50.8s -> 1762266899.png
+[01:59:02] OK   1761493042     大卫戴          head    48.4s -> 1761493042.png
+[01:59:07] OK   1762608632     雨姐           head    52.2s -> 1762608632.png
+[01:59:09] OK   1762944079     霍金           head    49.1s -> 1762944079.png
+[01:59:53] OK   1765211966     王源           head    46.1s -> 1765211966.png
+[01:59:55] OK   1762955139     丁真           head    53.6s -> 1762955139.png
+[02:00:03] OK   1765220738     李文亚          head    54.0s -> 1765220738.png
+[02:00:46] OK   1783444690     张雪峰          head    52.7s -> 1783444690.png
+[02:00:48] OK   1760804436     鸡哥           normal  44.8s -> 1760804436.png
+[02:00:58] OK   1784882689     不死老表         head    63.1s -> 1784882689.png
+[02:01:43] FAIL 1761042954     猪猪侠          attempt1: HTTP 400: {"error":{"code":"OutputImageSensitiveContentDetected.PolicyViolation","message":"The request failed because the output image may be related to copyri
+[02:01:49] OK   1760863546     龙卷风          normal  63.3s -> 1760863546.png
+[02:02:00] OK   1761130691     风火轮          normal  61.4s -> 1761130691.png
+[02:02:46] FAIL 1761042954     猪猪侠          attempt2: HTTP 400: {"error":{"code":"OutputImageSensitiveContentDetected.PolicyViolation","message":"The request failed because the output image may be related to copyri
+[02:02:46] OK   1762348216     狂战士          normal  57.1s -> 1762348216.png
+[02:03:04] OK   1762427110     达芬奇机器人       normal  63.7s -> 1762427110.png
+[02:03:47] OK   1762531564     哪吒           normal  60.1s -> 1762531564.png
+[02:03:47] FAIL 1761042954     猪猪侠          attempt3: HTTP 400: {"error":{"code":"OutputImageSensitiveContentDetected.PolicyViolation","message":"The request failed because the output image may be related to copyri
+[02:03:51] GIVEUP 猪猪侠          HTTP 400: {"error":{"code":"OutputImageSensitiveContentDetected.PolicyViolation","message":"The request failed because the output image may be related to copyri
+[02:04:07] OK   1763660892     狙击手          normal  63.8s -> 1763660892.png
+[02:04:43] OK   1784211450     炮塔           normal  56.6s -> 1784211450.png
+[02:04:49] OK   1761558013     水果店          normal  57.7s -> 1761558013.png
+[02:04:55] OK   1763032527     投资           normal  48.1s -> 1763032527.png
+[02:05:30] OK   1761055389     烟            normal  40.7s -> 1761055389.png
+[02:05:41] OK   1761055351     烟            normal  57.9s -> 1761055351.png
+[02:06:08] OK   1760709365     肘            normal  73.0s -> 1760709365.png
+[02:06:16] OK   1760712568     篮球           normal  46.6s -> 1760712568.png
+[02:06:25] OK   1760708558     直升机          normal  43.8s -> 1760708558.png
+[02:07:03] OK   1761539722     炮塔生产线        normal  54.5s -> 1761539722.png
+[02:07:15] OK   1762943994     和平主义         normal  49.7s -> 1762943994.png
+[02:07:17] OK   1762608577     大脚           normal  60.3s -> 1762608577.png
+[02:07:50] OK   1763025652     纯正的冰         normal  47.0s -> 1763025652.png
+[02:07:59] OK   1762960272     能量护盾         normal  44.7s -> 1762960272.png
+[02:08:03] OK   1763059780     能量护盾air      normal  46.1s -> 1763059780.png
+[02:08:47] OK   1763096160     愤怒           normal  57.4s -> 1763096160.png
+[02:08:59] OK   1763096950     悲伤           normal  60.1s -> 1763096950.png
+[02:08:59] === 批量结束：成功 33 / 34 ===

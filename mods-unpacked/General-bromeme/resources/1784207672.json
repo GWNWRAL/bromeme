@@ -1,0 +1,52 @@
+{
+  "name": "轮椅",
+  "price": 60,
+  "max_nb": 1,
+  "tier": 2,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_ly_166",
+  "tags": [
+    "stat_speed"
+  ],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/vigilante_ring/vigilante_ring_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_speed",
+        "value": 8
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/helmet/helmet_effect_1.tres",
+      "changed_key_values": {
+        "value": 2
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/pile_of_books/effects/pile_of_books_effect_2.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/shmoop/shmoop_effect_2.tres",
+      "changed_key_values": {
+        "value": 3
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/shackles/shackles_effect_4.tres",
+      "changed_key_values": {
+        "set_cap_to_current_stat": "stat_max_hp"
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 8
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1784207672.png"
+}

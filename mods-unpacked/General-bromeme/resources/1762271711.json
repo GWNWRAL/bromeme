@@ -1,0 +1,28 @@
+{
+  "name": "天元鼎",
+  "price": 178,
+  "max_nb": 1,
+  "tier": 3,
+  "item_type": 1,
+  "unlocked_by_default": 0,
+  "my_id": "item_bromeme_tyd_480",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://mods-unpacked/QianMo-BroLab/contents/characters/1/brolab_virtual_character_effect_3.tres",
+      "changed_key_values": {
+        "value": 2,
+        "brolab_midas_count": 1
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_meme",
+        "value": 7
+      }
+    }
+  ],
+  "relative_icon_path": "icons/1762271711.png"
+}

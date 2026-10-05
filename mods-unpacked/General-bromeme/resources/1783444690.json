@@ -1,0 +1,89 @@
+{
+  "name": "张雪峰",
+  "price": 1,
+  "max_nb": -1,
+  "tier": 0,
+  "item_type": 0,
+  "unlocked_by_default": 0,
+  "my_id": "character_bromeme_zxf_442",
+  "tags": [],
+  "wanted_tags": [
+    "stat_elemental_damage",
+    "stat_speed"
+  ],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/blood_donation/blood_donation_effect_2.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/characters/golem/golem_effect_5.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/alien_baby/alien_baby_effect_1.tres",
+      "changed_key_values": {
+        "value": 20
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/vigilante_ring/vigilante_ring_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_max_hp",
+        "value": 6
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/characters/hiker/effects/hiker_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_speed",
+        "value": 1,
+        "value2": 40
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/mage/mage_effect_2.tres",
+      "changed_key_values": {}
+    },
+    {
+      "base_resource_path": "res://items/all/power_generator/power_generator_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_elemental_damage",
+        "nb_stat_scaled": 5
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/characters/creature/effects/creature_effect_2a.tres",
+      "changed_key_values": {
+        "key": "item_frozen_heart"
+      }
+    },
+    {
+      "base_resource_path": "res://items/characters/mage/mage_effect_3.tres",
+      "changed_key_values": {
+        "key": "item_pile_of_books"
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/characters/romantic/effects/romantic_effect_0a.tres",
+      "changed_key_values": {
+        "value": 150
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/butterfly/butterfly_effect_2.tres",
+      "changed_key_values": {
+        "value": -6
+      }
+    }
+  ],
+  "starting_weapons": [
+    "weapon_smg_1",
+    "weapon_lightning_shiv_1",
+    "weapon_chopper_1",
+    "weapon_plank_1",
+    "weapon_icicle_1",
+    "weapon_taser_1"
+  ],
+  "relative_icon_path": "icons/1783444690.png"
+}
