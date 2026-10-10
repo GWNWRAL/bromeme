@@ -1,0 +1,87 @@
+{
+  "name": "挑战者（无苍赫）",
+  "price": 1,
+  "max_nb": -1,
+  "tier": 0,
+  "item_type": 0,
+  "unlocked_by_default": 0,
+  "my_id": "character_bromeme_challenger_test_888",
+  "tags": [],
+  "wanted_tags": [],
+  "datas": [
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "",
+        "text_key": "每一波开始时必定触发 MEME 入侵",
+        "custom_key": "bromeme_always_meme_invade",
+        "value": 0,
+        "storage_method": 0,
+        "effect_sign": 0
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_max_hp",
+        "value": 5,
+        "text_key": "",
+        "custom_key": "",
+        "storage_method": 0,
+        "effect_sign": 0
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "stat_percent_damage",
+        "value": 20,
+        "text_key": "",
+        "custom_key": "",
+        "storage_method": 0,
+        "effect_sign": 0
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "",
+        "text_key": "BROMEME_EFF_CHALLENGER",
+        "custom_key": "",
+        "value": 0,
+        "storage_method": 0,
+        "effect_sign": 0
+      }
+    },
+    {
+      "base_resource_path": "res://items/all/cake/cake_effect_1.tres",
+      "changed_key_values": {
+        "key": "",
+        "text_key": "BROMEME_EFF_CHALLENGER_TEST",
+        "custom_key": "",
+        "value": 0,
+        "storage_method": 0,
+        "effect_sign": 0
+      }
+    },
+    {
+      "base_resource_path": "res://dlcs/dlc_1/items/lantern/effects/lantern_effect_1.tres",
+      "changed_key_values": {
+        "text_key": "EFFECT_KNOCKBACK_AURA",
+        "value": 1
+      }
+    }
+  ],
+  "starting_weapons": [
+    "weapon_fist_1",
+    "weapon_spear_1",
+    "weapon_torch_1",
+    "weapon_lightning_shiv_1",
+    "weapon_dagger_1",
+    "weapon_ghost_axe_1",
+    "weapon_plank_1",
+    "weapon_spoon_1"
+  ],
+  "starting_items": [],
+  "relative_icon_path": "icons/1790000999.png"
+}
