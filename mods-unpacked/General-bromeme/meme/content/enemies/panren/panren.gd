@@ -54,7 +54,7 @@ const PATH_SPIKE_SAFE_DIST: float = 110.0      # 路径尖刺不在角色这个�
 const TELEPORT_FLASH_TIME: float = 0.22
 
 # 冲刺
-const DASH_SPEED: float = 937.5          # 原 1250，冲刺速度减慢 25%（1250 × 0.75）
+const DASH_SPEED: float = 703.125        # 原 1250 → 937.5（×0.75）→ 703.125（再 ×0.75，即原来的 3/4）
 const DASH_TIME: float = 0.42
 const DASH_CHAIN_COUNT: int = 2                # 动作5：连冲两次
 const DASH_WINDUP_TIME: float = 0.5            # 尖刺后"朝角色冲刺"的前摇
