@@ -169,6 +169,18 @@ func _process(delta: float) -> void:
 		_apply_touch_damage()
 
 
+# 苍/赫 的**吸引/排斥力**不影响 boss（伤害仍然生效）：
+# boss 判定照抄本 mod 击退光环的写法（enemy_data 上的 is_boss），
+# 字段缺失时按"不是 boss"处理，不会因为别的 mod 改了结构就报错。
+func _is_boss(enemy) -> bool:
+	if enemy == null or not is_instance_valid(enemy):
+		return true
+	var data = enemy.get("enemy_data")
+	if data == null:
+		return false
+	return bool(data.get("is_boss"))
+
+
 # 力场：苍吸引 / 赫排斥
 # 用 Area2D 的 body_entered/exited 事件维护"在册怪物"，不再遍历 _entity_spawner.enemies
 func _apply_forces() -> void:
@@ -180,6 +192,8 @@ func _apply_forces() -> void:
 		var enemy = _near_bodies[key]
 		if enemy == null or not is_instance_valid(enemy):
 			dead_keys.append(key)
+			continue
+		if _is_boss(enemy):
 			continue
 		var delta_v: Vector2 = global_position - enemy.global_position
 		var dist: float = delta_v.length()
