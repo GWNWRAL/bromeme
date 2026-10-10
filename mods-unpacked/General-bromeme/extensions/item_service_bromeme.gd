@@ -812,7 +812,15 @@ func bromeme_make_pick_item(card, _player_index: int) -> ItemData:
 	# 卡道具的图标是运行时合成的、原版 serialize 不存 Texture，所以图标来源
 	# 记到 user:// 下的小文件里（见 bromeme_remember_icon_path）。
 	item.name = String(card.name)
-	item.icon = bromeme_watermark_icon(card.icon)
+	# 水印规则（用户 2.42.40 要求）：
+	#   · meme 系列道具（量子meme 等 8 件）→ **不加**水印，用道具自己的图标
+	#   · 组合卡（融合/改造组合）、改造卡、转职卡、随机抽取卡、角色卡 → 保持原样（加水印）
+	if _bromeme_card_is_meme_item(card):
+		item.icon = _bromeme_card_source_icon(card)
+		if item.icon == null:
+			item.icon = bromeme_watermark_icon(card.icon)
+	else:
+		item.icon = bromeme_watermark_icon(card.icon)
 	bromeme_remember_icon_path(item.my_id, card)
 	item.tier = int(card.tier)
 	item.value = 60
@@ -832,6 +840,42 @@ func bromeme_make_pick_item(card, _player_index: int) -> ItemData:
 	# 也不会进商店池/宝箱；只是让读档能按 id 找回它）
 	ItemService.register_runtime_item(item)
 	return item
+
+
+# 这张卡是不是"meme 系列道具"（量子meme / meme核心 / 熵增meme …）。
+# 这类卡的来源是一件**真实存在的道具**，它自带图标，不需要 mod 水印。
+func _bromeme_card_is_meme_item(card) -> bool:
+	if card == null or not is_instance_valid(card):
+		return false
+	var source_id: String = _bromeme_card_source_item_id(card)
+	if source_id == "":
+		return false
+	if not source_id.begins_with("item_bromeme_meme_"):
+		return false
+	# 确认它确实是本 mod 注册的 meme 系列（8 件：4 专属 + 4 混沌）
+	return get_item_from_id(Keys.generate_hash(source_id)) != null
+
+
+# 卡的来源道具 id：卡 id 形如 bromeme_pick|exclusive|item_bromeme_meme_quantum
+func _bromeme_card_source_item_id(card) -> String:
+	if card == null or not is_instance_valid(card):
+		return ""
+	var raw: String = String(card.my_id)
+	var segs: Array = raw.split("|")
+	if segs.size() >= 3:
+		return String(segs[2])
+	return ""
+
+
+# 来源道具自己的图标（不加任何水印）；取不到则返回 null，由调用方兜底
+func _bromeme_card_source_icon(card):
+	var source_id: String = _bromeme_card_source_item_id(card)
+	if source_id == "":
+		return null
+	var src = get_item_from_id(Keys.generate_hash(source_id))
+	if src != null and src.icon != null:
+		return src.icon
+	return bromeme_raw_icon_for(source_id)
 
 
 # 在当前 ItemService.items 里找一个还没被占用的 id：
