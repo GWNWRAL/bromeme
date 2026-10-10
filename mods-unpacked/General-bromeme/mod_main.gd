@@ -258,13 +258,6 @@ const EFFECT_TEXTS: Dictionary = {
 		"ko": "정예 또는 보스를 처치할 때마다: 체력 재생 +5, 피해량 +5%",
 		"ru": "За каждое убийство элиты или босса: регенерация HP +5, урон +5%",
 	},
-	"BROMEME_EFF_CHALLENGER_TEST": {
-		"zh": "测试角色：与挑战者相同，但不携带苍与赫",
-		"en": "Test character: same as the Challenger, but without Cang and He",
-		"ja": "テスト用キャラ：挑戦者と同じだが、蒼と赫を所持しない",
-		"ko": "테스트 캐릭터: 챌린저와 동일하지만 창과 혜가 없음",
-		"ru": "Тестовый персонаж: как Претендент, но без Цан и Хэ",
-	},
 	"BROMEME_EFF_CHALLENGER_KNOCKBACK": {
 		"zh": "每 1 秒击退周围的怪物",
 		"en": "Knocks back nearby enemies once per second",
