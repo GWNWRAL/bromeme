@@ -16,7 +16,7 @@ const SPRITE_PATH: String = MOD_DIR + "meme/content/enemies/van/van.png"
 
 # 冲刺：2 短 + 1 长，三段**连续**衔接（中间不停顿），打完冷却 2s
 # 距离 = 速度 × 时长：短冲 ×2、长冲 ×3（时长不变，靠速度拉距离）
-const DASH_SPEED: float = 900.0
+const DASH_SPEED: float = 600.0       # 原 900 × 2/3 = 600
 const SHORT_DASH: float = 0.5
 const LONG_DASH: float = 1.0
 const SHORT_DASH_SPEED_MULT: float = 2.0
