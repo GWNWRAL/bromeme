@@ -15,12 +15,13 @@ const MOD_DIR: String = "res://mods-unpacked/General-bromeme/"
 const SPRITE_PATH: String = MOD_DIR + "meme/content/enemies/van/van.png"
 
 # 冲刺：2 短 + 1 长，三段**连续**衔接（中间不停顿），打完冷却 2s
-# 距离 = 速度 × 时长：短冲 ×2、长冲 ×3（时长不变，靠速度拉距离）
+# 距离 = 速度 × 时长（时长不同：短冲 0.5s、长冲 1.0s）
 const DASH_SPEED: float = 600.0       # 原 900 × 2/3 = 600
 const SHORT_DASH: float = 0.5
 const LONG_DASH: float = 1.0
-const SHORT_DASH_SPEED_MULT: float = 2.0
-const LONG_DASH_SPEED_MULT: float = 2.0
+# 倍率去掉：之前是 2.0，实际速度会变成 600×2=1200；用户要求不要 ×2 → 改为 1.0
+const SHORT_DASH_SPEED_MULT: float = 1.0
+const LONG_DASH_SPEED_MULT: float = 1.0
 const DASH_CHAIN_GAP: float = 0.05    # 只留一点点衔接缝隙，保证是"连续冲刺"
 const FIRST_DASH_DELAY: float = 0.3
 const COOLDOWN: float = 3.0          # 三连冲之后的冷却（原 2.0，+1s）
