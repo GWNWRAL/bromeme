@@ -46,6 +46,8 @@ const PICK_LOGO_PATH: String = MOD_DIR + "meme/content/ui/bromeme_logo.png"
 const SHOP_EXTENSION: String = MOD_DIR + "extensions/base_shop_bromeme.gd"
 # 外套外观扩展：存"贴图来源名"，读档后由 player_run_data 扩展把贴图挂回去
 const APPEARANCE_EXTENSION: String = MOD_DIR + "extensions/item_appearance_bromeme.gd"
+# 道具图标持久化扩展：把图标资源路径写进存档，读档时 load 回来（退出重进不丢图）
+const ITEM_ICON_EXTENSION: String = MOD_DIR + "extensions/item_parent_data_bromeme.gd"
 
 # BroLab 自己的效果资源 -> 本 mod 内置的副本
 const BROLAB_RES_PREFIX: String = "res://mods-unpacked/QianMo-BroLab/"
@@ -137,6 +139,9 @@ func _init() -> void:
 	# 外套外观：补一个"贴图来源名"，让动态生成的角色贴图能扛过读档
 	# （原版只存 sprite.resource_path，而运行时纹理没有路径 → 读档后角色贴图消失）
 	ModLoaderMod.install_script_extension(APPEARANCE_EXTENSION)
+	# 道具图标持久化：把图标资源路径写进存档（原版不存 Texture，读档反查又早于本 mod 注册
+	# → 量子meme 这类道具与 4选1 卡道具退出重进后丢图。日志实证：卡道具贴图来源解析失败）
+	ModLoaderMod.install_script_extension(ITEM_ICON_EXTENSION)
 	# 和 FengLiu-FengAddMods（土豆随想）一起跑
 	_install_fengaddmods_compat()
 
