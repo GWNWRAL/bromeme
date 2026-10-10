@@ -8,7 +8,8 @@ extends Pet
 #      （pet.tscn 根来自 unit.tscn，其 stats 是 null；不给就会在
 #       Unit.init_current_stats() 的 max_stats.copy_stats(stats) 处原生崩溃）
 #    · 脚本 extends Pet，移动方式自己写
-#    · 数值只存在一处：orb_weapon_stats.tres（描述与实伤共用，避免两处不一致）
+#    · 数值各写一份并由场景指定：赫 orb_weapon_stats.tres(5)、苍 orb_weapon_stats_cang.tres(2.5)
+#      —— 苍伤害是赫的 1/2 由**数值**体现，代码里不乘系数
 #
 #  区别：不追怪，固定绕玩家转，半径比流浪机器人更大（它 100~200，这里 240）。
 #  苍：吸引怪物与子弹；赫：排斥。两者都对碰到的怪物持续造成伤害。
@@ -20,7 +21,6 @@ extends Pet
 # 注意：resources/icons/ 不进 zip（构建脚本的既有约定），所以不能读那里。
 const CANG_ART: String = "res://mods-unpacked/General-bromeme/art/item/1791000301.png"
 const HE_ART: String = "res://mods-unpacked/General-bromeme/art/item/1791000302.png"
-const WEAPON_STATS_PATH: String = "res://mods-unpacked/General-bromeme/content/pets/orb/orb_weapon_stats.tres"
 const PET_STATS_PATH: String = "res://mods-unpacked/General-bromeme/content/pets/orb/orb_stats.tres"
 
 const ORBIT_RADIUS: float = 240.0
@@ -31,19 +31,19 @@ const FORCE_RADIUS: float = 300.0
 # 2200（太强）→ 450（仍偏强）→ 150
 const FORCE_STRENGTH: float = 150.0
 const PER_FRAME_STEP: float = 0.016
-const CANG_DAMAGE_MULT: float = 0.5            # 苍的伤害减半（用户要求）
 # 接触伤害判定半径：原 46 → 92（碰撞体积翻倍，用户要求）
 const TOUCH_RADIUS: float = 92.0
 const DAMAGE_INTERVAL: float = 0.35
 
 # 由场景覆盖：true = 吸引（苍），false = 排斥（赫）
 export (bool) var is_attract: bool = true
+# 本颗球的伤害数值（由场景指定：苍 = orb_weapon_stats_cang.tres，赫 = orb_weapon_stats.tres）
+export (Resource) var weapon_stats: Resource = null
 export (float) var orbit_radius: float = ORBIT_RADIUS
 
 var _phase: float = 0.0
 var _damage_timer: float = 0.0
 var _art_done: bool = false
-var _weapon_stats = null
 # 照抄原版 WanderingBot：玩家引用来自 init() 传进来的 players_ref。
 # 之前用 RunData.players_data[pi].get("character") 取不到，所以球根本不动。
 var _players: Array = []
@@ -64,7 +64,6 @@ func _ready() -> void:
 	if stats == null:
 		stats = load(PET_STATS_PATH)
 	_phase = 0.0
-	_weapon_stats = load(WEAPON_STATS_PATH)
 	_apply_art()
 	_setup_range()
 
@@ -214,18 +213,14 @@ func _apply_touch_damage() -> void:
 		_near_bodies.erase(key)
 
 
-# 与物品描述同一个来源：orb_weapon_stats.tres
-# 苍（is_attract=true）再乘 CANG_DAMAGE_MULT（减半），赫保持原值。
+# 与物品描述同一个来源：本颗球自己的 weapon_stats（场景指定）
 func _current_damage() -> int:
-	if _weapon_stats == null:
-		_weapon_stats = load(WEAPON_STATS_PATH)
-	if _weapon_stats == null:
+	if weapon_stats == null:
 		return 5
 	var args = WeaponServiceInitStatsArgs.new()
-	var current_stats = WeaponService.init_melee_pet_stats(_weapon_stats, player_index, args)
+	var current_stats = WeaponService.init_melee_pet_stats(weapon_stats, player_index, args)
 	if current_stats == null:
 		return 5
-	var dmg: float = float(current_stats.damage)
-	if is_attract:
-		dmg *= CANG_DAMAGE_MULT
-	return int(max(1, round(dmg)))
+	# 伤害值直接来自本颗球自己的 weapon_stats（苍/赫各一份数值文件），
+	# 不再在代码里乘系数 —— 描述与实伤同源。
+	return int(max(1, round(float(current_stats.damage))))
