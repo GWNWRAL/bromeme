@@ -23,8 +23,8 @@ export (bool) var pet_is_attract: bool = true
 
 
 func get_args(player_index: int) -> Array:
-	if weapon_stats == null:
-		weapon_stats = load("res://mods-unpacked/General-bromeme/content/pets/orb/orb_weapon_stats.tres")
+	# 各效果的 .tres 已指到对应数值（苍 = orb_weapon_stats_cang.tres，赫 = orb_weapon_stats.tres），
+	# 这里不再硬编码共用文件 —— 描述与实伤同源。
 	if weapon_stats == null:
 		return ["5", ""]
 
