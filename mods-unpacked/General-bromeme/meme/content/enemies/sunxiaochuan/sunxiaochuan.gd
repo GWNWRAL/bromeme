@@ -28,6 +28,7 @@ const SPRITE_SCALE: float = 0.54   # 原 0.72，体型缩小 25%
 const PHASE2_HP_RATIO: float = 0.5
 const DASH_DELAY: float = 0.7      # 弹幕打完多久后开冲
 const DASH_RECOVER: float = 0.35   # 冲刺结束后的额外缓冲
+const DASH_SPEED: float = 600.0    # 冲刺速度：原 900 × 2/3 = 600（场景里是 900，这里显式覆盖）
 
 const LETTERS: Array = ["N", "M", "S", "L"]
 
@@ -344,6 +345,8 @@ func _br_tell_body__begin_dash() -> void:
 	_current_attack_behavior = _charge_behavior
 	_charge_behavior.reset()
 	_charge_behavior._current_cd = 0.0
+	# 冲刺速度：场景里是 900，这里显式覆盖为原来的 2/3（900 × 2/3 = 600）
+	_charge_behavior.charge_speed = DASH_SPEED
 	# 显式走原版动画回调里的两步，确保真正把 boss 甩出去
 	var p0: Vector2 = global_position
 	_charge_behavior.start_shoot()
