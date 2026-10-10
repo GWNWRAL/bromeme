@@ -137,9 +137,6 @@ func _init() -> void:
 	# 外套外观：补一个"贴图来源名"，让动态生成的角色贴图能扛过读档
 	# （原版只存 sprite.resource_path，而运行时纹理没有路径 → 读档后角色贴图消失）
 	ModLoaderMod.install_script_extension(APPEARANCE_EXTENSION)
-	# 属性小图标兜底：本 mod 的 meme 属性图标是运行时贴图（resource_path 为空），
-	# 原版 get_scaling_stat_icon_text() 拼 [img]...[/img] 取 resource_path → 图标不显示
-	ModLoaderMod.install_script_extension(MOD_DIR + "extensions/singletons/utils.gd")
 	# 和 FengLiu-FengAddMods（土豆随想）一起跑
 	_install_fengaddmods_compat()
 
@@ -438,6 +435,40 @@ const MEME_STAT_ICON_PATH: String = MOD_DIR + "meme/stat_meme_icon.png"
 const MEME_STAT_DISPLAY: String = "meme值"
 
 
+# -----------------------------------------------------------------------------
+#  带 resource_path 的属性图标
+#
+#  为什么需要：原版 Utils.get_scaling_stat_icon_text() 拼 BBCode 用的是
+#    `[img=%sx%s]%s[/img] % small_icon.resource_path`
+#  —— 必须是一个**路径字符串**（Godot 的 [img] 不接受对象；传对象进去会像
+#  截图那样把 "[ImageTexture:965941]" 当文字打印出来）。
+#  而本 mod 的属性图标是运行时解码的 ImageTexture，resource_path 为空 → 图标不显示。
+#
+#  做法：把解码好的贴图存一份 user:// 下的 .tres，再 load 回来 ——
+#  ImageTexture 存成 .tres 后加载回来就带有效 resource_path，BBCode 即可渲染。
+#  （工程里读档贴图缓存失败时也退回运行时贴图，这里同理：存不了就直接用。）
+# -----------------------------------------------------------------------------
+const BROMEME_ICON_CACHE_DIR: String = "user://bromeme_icon_cache"
+
+
+func _bromeme_stat_icon_texture(png_path: String, cache_name: String) -> Texture:
+	var dir := Directory.new()
+	if not dir.dir_exists(BROMEME_ICON_CACHE_DIR):
+		dir.make_dir_recursive(BROMEME_ICON_CACHE_DIR)
+
+	var out_path: String = "%s/%s.tres" % [BROMEME_ICON_CACHE_DIR, cache_name]
+	if not ResourceLoader.exists(out_path):
+		var runtime: Texture = _load_png_texture(png_path, 0)
+		if runtime == null:
+			return null
+		if ResourceSaver.save(out_path, runtime) != OK:
+			return runtime      # 存不了就退回运行时贴图（本次会话内仍能用）
+	var loaded = load(out_path)
+	if loaded == null or not (loaded is Texture):
+		return _load_png_texture(png_path, 0)
+	return loaded
+
+
 func _register_meme_stat() -> void:
 	var stat = load(MEME_STAT_PATH)
 	if stat == null:
@@ -449,7 +480,7 @@ func _register_meme_stat() -> void:
 		if existing != null and Keys.generate_hash(String(existing.stat_name)) == stat_hash:
 			return
 
-	var icon: Texture = _load_png_texture(MEME_STAT_ICON_PATH, 0)
+	var icon: Texture = _bromeme_stat_icon_texture(MEME_STAT_ICON_PATH, "stat_meme")
 	if icon != null:
 		stat.icon = icon
 		stat.small_icon = icon
