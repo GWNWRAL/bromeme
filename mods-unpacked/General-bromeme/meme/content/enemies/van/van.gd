@@ -16,7 +16,7 @@ const SPRITE_PATH: String = MOD_DIR + "meme/content/enemies/van/van.png"
 
 # 冲刺：2 短 + 1 长，三段**连续**衔接（中间不停顿），打完冷却 2s
 # 距离 = 速度 × 时长（时长不同：短冲 0.5s、长冲 1.0s）
-const DASH_SPEED: float = 600.0       # 原 900 × 2/3 = 600
+const DASH_SPEED: float = 750.0       # 用户指定：750（倍率为 1.0，所以实际速度就是 750）
 const SHORT_DASH: float = 0.5
 const LONG_DASH: float = 1.0
 # 倍率去掉：之前是 2.0，实际速度会变成 600×2=1200；用户要求不要 ×2 → 改为 1.0
