@@ -242,6 +242,87 @@ const MEME_ALWAYS_MARKER: String = "bromeme_always_meme_invade"
 func _on_EntitySpawner_players_spawned(players: Array) -> void:
 	._on_EntitySpawner_players_spawned(players)
 	call_deferred("_bromeme_check_meme_invasion")
+	# 读档后补背包道具图标（详见函数说明）：这里触发一次，内部自带重试
+	call_deferred("_bromeme_repair_item_icons", 0)
+
+
+# =============================================================================
+#  读档后补背包道具的图标
+#
+#  症状：退出重进后，本 mod 的道具（量子meme 等）在背包/商店弹窗里没有图标。
+#
+#  原因：原版 ItemParentData.serialize() **不存 Texture**，图标靠 my_id 反查
+#        ItemService —— 而**读档发生在本 mod 内容注册之前**（实测那一刻
+#        ItemService.items 只有 377 件原版道具），所以反查失败、图标为空。
+#
+#  修法（不碰存档格式，避免再触发 2.42.38 那种崩溃）：
+#        等 mod 内容注册完之后，把**玩家背包里的那件实例**的图标，
+#        从 ItemService 里同 id 的注册道具拷过来。
+#        ⚠️ 关键：之前那套重试补的是 ItemService 里的注册道具，而不是玩家背包实例，
+#        所以永远补不上（两件是不同的对象）。
+# =============================================================================
+const BROMEME_READY_ITEM_COUNT: int = 400      # 原版 377 + 本 mod，超过即认为内容已装完
+
+
+func _bromeme_repair_item_icons(attempt: int) -> void:
+	if RunData == null or ItemService == null:
+		return
+	if ItemService.items.size() < BROMEME_READY_ITEM_COUNT:
+		# 内容还没装完，稍后再试（最多 ~1.6 秒）
+		if attempt < 8:
+			call_deferred("_bromeme_repair_item_icons", attempt + 1)
+		return
+
+	var players = RunData.players_data
+	if players == null or players.size() == 0:
+		if attempt < 8:
+			call_deferred("_bromeme_repair_item_icons", attempt + 1)
+		return
+
+	var fixed: int = 0
+	var missing: int = 0
+	for pi in players.size():
+		var pd = players[pi]
+		if pd == null or not is_instance_valid(pd):
+			continue
+		# players_data[i] 是 PlayerRunData 实例，它自己带 items 数组
+		var inv = pd.items
+		if inv == null or typeof(inv) != TYPE_ARRAY:
+			continue
+		for it in inv:
+			if it == null or not is_instance_valid(it):
+				continue
+			var mid: String = String(it.my_id)
+			if not mid.begins_with("item_bromeme_"):
+				continue
+			if _bromeme_icon_usable(it.icon):
+				continue
+			# 从注册道具里取图标（它由 json 在启动时正常加载）
+			var reg = null
+			for cand in ItemService.items:
+				if cand != null and is_instance_valid(cand) and String(cand.my_id) == mid:
+					reg = cand
+					break
+			if reg != null and _bromeme_icon_usable(reg.icon):
+				it.icon = reg.icon
+				fixed += 1
+			else:
+				missing += 1
+
+	if fixed > 0 or missing > 0:
+		ModLoaderLog.info("读档后补道具图标：修复 %d 件，仍缺 %d 件" % [fixed, missing], MEME_LOG_NAME)
+	# 首轮没补上（例如商店界面刚打开）时再试几次
+	if fixed == 0 and missing > 0 and attempt < 8:
+		call_deferred("_bromeme_repair_item_icons", attempt + 1)
+
+
+# 图标是否可用：非空，且不是空路径的占位
+func _bromeme_icon_usable(tex) -> bool:
+	if tex == null:
+		return false
+	if not (tex is Texture):
+		return false
+	return true
 
 
 # 给玩家挂两个自管理节点：
