@@ -95,6 +95,14 @@ func _on_range_body_entered(body) -> void:
 	if body == null or not is_instance_valid(body):
 		return
 	_near_bodies[body.get_instance_id()] = body
+	# 探针（查完删除）：确认进入力场范围的到底是什么，以及 boss 判定看到了什么
+	var d = body.get("enemy_data")
+	var is_b = body.get("is_boss")
+	ModLoaderLog.info("球探针：进入方向=%s 节点=%s 脚本=%s enemy_data=%s is_boss字段=%s 判定=%s" % [
+			"吸引" if is_attract else "排斥",
+			body.get_class(), str(body.get_script().resource_path if body.get_script() != null else "-"),
+			("null" if d == null else str(d.get("is_boss"))),
+			str(is_b), str(_is_boss(body))], "bromeme")
 
 
 func _on_range_body_exited(body) -> void:
