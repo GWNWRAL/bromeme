@@ -577,7 +577,7 @@ func _bromeme_challenger_kill(enemy) -> void:
 	RunData.add_stat(Keys.generate_hash("stat_hp_regeneration"), BROMEME_CHALLENGER_HP_REGEN, player_index)
 	RunData.add_stat(Keys.generate_hash("stat_percent_damage"), BROMEME_CHALLENGER_DAMAGE, player_index)
 
-	ModLoaderLog.info("挑战者：精英/首领击杀 → 生命再生 +%d、伤害 +%d%%" % [
+	ModLoaderLog.info("牢师：精英/首领击杀 → 生命再生 +%d、伤害 +%d%%" % [
 			BROMEME_CHALLENGER_HP_REGEN, BROMEME_CHALLENGER_DAMAGE], MEME_LOG_NAME)
 
 func _bromeme_is_challenger(player_index: int) -> bool:
