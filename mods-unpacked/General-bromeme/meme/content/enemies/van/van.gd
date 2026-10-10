@@ -96,7 +96,6 @@ func _br_tell_arm(body_name: String, args: Array = []) -> void:
 	if player == null:
 		_br_tell_fire_pending()
 		return
-	ModLoaderLog.info("VDASH arm=%s 播shoot（anim=%s）" % [body_name, str(player.current_animation)], "bromeme")
 	player.playback_speed = 1.0
 	player.play(BR_TELL_ANIM)
 
@@ -149,7 +148,6 @@ func start_shoot() -> void:
 
 # 原版在 t=0.8 由动画 method 轨调用 → 这里真正出招
 func shoot() -> void:
-	ModLoaderLog.info("VDASH shoot() 回调触发 pending=%s" % str(_br_tell_pending), "bromeme")
 	_br_tell_fire_pending()
 
 
@@ -232,19 +230,9 @@ func _patch_scale_animations() -> void:
 		ModLoaderLog.info("%s: 死亡缩放轨道替换失败，改用每帧纠正" % enemy_id, "bromeme")
 
 
-var _vprobe_tick: int = 0
-
-
 func _physics_process(delta: float) -> void:
 	._physics_process(delta)
 	_br_tell_watchdog()
-	_vprobe_tick += 1
-	if _vprobe_tick % 60 == 0:
-		var _vp = get_node_or_null("AnimationPlayer")
-		ModLoaderLog.info("VDASH 状态 state=%d idx=%d dashing=%s dash_t=%0.2f st_t=%0.2f anim=%s" % [
-				_state, _dash_index, str(_dashing), _dash_timer, _state_timer,
-				str(_vp.current_animation) if _vp != null else "-"], "bromeme")
-
 	if dead:
 		return
 	# 兜底：替换失败时至少保证活着的时候体型正确
@@ -297,7 +285,6 @@ func _physics_process(delta: float) -> void:
 # DASH 分支每帧成立 → 每帧重播前摇 → 永远冲不出去）。
 # 所以这里先推进状态机并预排参数，前摇动画播完（shoot 回调）再真正甩出去。
 func _start_dash() -> void:
-	ModLoaderLog.info("VDASH 调_start_dash idx=%d charging=%s dashing=%s" % [_dash_index, str(_charge_behavior != null), str(_dashing)], "bromeme")
 	if _charge_behavior == null:
 		return
 
@@ -322,7 +309,6 @@ func _start_dash() -> void:
 
 
 func _br_tell_body__start_dash() -> void:
-	ModLoaderLog.info("VDASH body 执行（前摇结束，真正开冲）", "bromeme")
 	if _charge_behavior == null:
 		return
 	# 二阶段：起冲瞬间左右 30° 各三发
@@ -339,7 +325,6 @@ func _br_tell_body__start_dash() -> void:
 
 
 func _finish_dash() -> void:
-	ModLoaderLog.info("VDASH finish idx=%d" % _dash_index, "bromeme")
 	_dashing = false
 	if _charge_behavior != null:
 		if _charge_behavior._unlock_move_timer != null and _charge_behavior._unlock_move_timer.time_left > 0.0:
