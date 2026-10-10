@@ -21,9 +21,8 @@ const FIRST_VOLLEY_DELAY: float = 1.4
 const SPRITE_SCALE: float = 0.525  # 原 0.7，体型缩小 25%
 const PHASE2_HP_RATIO: float = 0.5
 const PHASE2_STAGGER: float = 0.7     # 二阶段多根烟之间的错峰间隔
-# 后续烟的摆位：相对王源本体的环带距离（原来只有 ±60/±40 的方形随机，太近）
-const SMOKE_MIN_DIST: float = 90.0
-const SMOKE_MAX_DIST: float = 200.0
+# 第二根（及后续）烟相对第一根烟的距离：两根烟固定相距 50
+const SMOKE_GAP: float = 50.0
 const PATTERN_COUNT: int = 3
 
 # 二阶段移动：移速减慢 + 自己在场地里随机游走（直线或曲线）
@@ -295,13 +294,12 @@ func _spawn_smoke() -> void:
 	smoke.name = "Smoke%d" % (_smokes.size() + 1)
 	add_child(smoke)
 	smoke.setup(self)
-	# 第二根烟（及后续长出来的烟）要离王源本体远一点，否则两根烟几乎叠在一起。
-	# 做法：随机角度 + 随机半径，并保证最小间距 SMOKE_MIN_DIST，
-	# 让每根烟都落在 [SMOKE_MIN_DIST, SMOKE_MAX_DIST] 的环带里。
+	# 第二根烟（及后续长出来的烟）相对**第一根烟**偏移固定的 SMOKE_GAP 距离。
+	# 第一根烟固定在王源本体上（position 0），所以两根烟之间就是 50。
+	# 上一版用的 90~200 环带太远了，这里改成用户指定的 50。
 	if _smokes.size() > 0:
 		var ang: float = randf() * TAU
-		var dist: float = rand_range(SMOKE_MIN_DIST, SMOKE_MAX_DIST)
-		smoke.position = Vector2(cos(ang), sin(ang)) * dist
+		smoke.position = Vector2(cos(ang), sin(ang)) * SMOKE_GAP
 	_smokes.append(smoke)
 
 
