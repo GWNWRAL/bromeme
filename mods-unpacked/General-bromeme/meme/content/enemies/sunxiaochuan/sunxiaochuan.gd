@@ -76,7 +76,6 @@ func _br_tell_arm(body_name: String, args: Array = []) -> void:
 	#    · **别的招**在前摇期间来抢 → 也拒绝，否则会被覆盖掉（表现为"某一招被吞"）
 	#      被拒的招会在下一轮循环自然重试。
 	if not _br_tell_pending.empty():
-		ModLoaderLog.info("SDASH arm 被拒：%s（当前挂起=%s）" % [body_name, str(_br_tell_pending[0])], "bromeme")
 		if String(_br_tell_pending[0]) == body_name:
 			# 同一招：入口被重复调用，直接忽略
 			return
@@ -137,7 +136,6 @@ func start_shoot() -> void:
 
 # 原版在 t=0.8 由动画 method 轨调用 → 这里真正出招
 func shoot() -> void:
-	ModLoaderLog.info("SDASH shoot() 回调 pending=%s" % str(_br_tell_pending), "bromeme")
 	_br_tell_fire_pending()
 
 
@@ -220,19 +218,9 @@ func _patch_scale_animations() -> void:
 		ModLoaderLog.info("%s: 死亡缩放轨道替换失败，改用每帧纠正" % enemy_id, "bromeme")
 
 
-var _sprobe_tick: int = 0
-
-
 func _physics_process(delta: float) -> void:
 	._physics_process(delta)
 	_br_tell_watchdog()
-	_sprobe_tick += 1
-	if _sprobe_tick % 60 == 0:
-		var _vp2 = get_node_or_null("AnimationPlayer")
-		ModLoaderLog.info("SDASH 状态 phase2=%s dash_pending=%s dashing=%s dash_t=%0.2f end_t=%0.2f anim=%s" % [
-				_phase2, _dash_pending, _dashing, _dash_timer, _dash_end_timer,
-				str(_vp2.current_animation) if _vp2 != null else "-"], "bromeme")
-
 	if dead:
 		return
 	# 兜底：替换失败时至少保证活着的时候体型正确
@@ -294,7 +282,6 @@ func _start_next_action() -> void:
 		return
 	var act: String = String(_action_queue.pop_front())
 	_acting = true
-	ModLoaderLog.info("SDASH 队列动作：%s（剩余=%d）" % [act, _action_queue.size()], "bromeme")
 	if act == "dash":
 		# 冲刺**不加**我们的 shoot 前摇：
 		# `_charge_behavior.start_shoot()` 本身就是前摇（锁移动 + 伸缩动画），
@@ -332,12 +319,10 @@ func _enter_phase2() -> void:
 # 切换到冲刺行为：它自己的 physics_process 会播 shoot 动画，
 # 动画回调再触发 start_shoot()/shoot()，由原版逻辑把 boss 甩出去。
 func _begin_dash() -> void:
-	ModLoaderLog.info("SDASH 调_begin_dash phase2=%s dashing=%s charging=%s" % [_phase2, str(_dashing), str(_charge_behavior != null)], "bromeme")
 	_br_tell_arm("_br_tell_body__begin_dash", [])
 
 
 func _br_tell_body__begin_dash() -> void:
-	ModLoaderLog.info("SDASH body 执行（前摇结束，真正开冲）", "bromeme")
 	if _charge_behavior == null:
 		return
 	_dashing = true
@@ -347,17 +332,11 @@ func _br_tell_body__begin_dash() -> void:
 	_charge_behavior._current_cd = 0.0
 	# 冲刺速度：场景里是 900，这里显式覆盖为原来的 2/3（900 × 2/3 = 600）
 	_charge_behavior.charge_speed = DASH_SPEED
-	# 显式走原版动画回调里的两步，确保真正把 boss 甩出去
-	var p0: Vector2 = global_position
 	_charge_behavior.start_shoot()
 	_charge_behavior.shoot()
-	ModLoaderLog.info("SDASH 已调 start_shoot/shoot：bonus_speed=%.0f move_locked=%s can_move=%s _current_movement=%s pos=%s" % [
-			bonus_speed, str(_move_locked), str(_can_move), str(_current_movement), str(p0)], "bromeme")
 
 
 func _end_dash() -> void:
-	ModLoaderLog.info("SDASH 冲刺结束：bonus_speed=%.0f move_locked=%s 位置=%s" % [
-			bonus_speed, str(_move_locked), str(global_position)], "bromeme")
 	_dashing = false
 	_acting = false
 	_current_attack_behavior = _letter_behavior
