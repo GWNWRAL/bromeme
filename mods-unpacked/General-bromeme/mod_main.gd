@@ -137,6 +137,9 @@ func _init() -> void:
 	# 外套外观：补一个"贴图来源名"，让动态生成的角色贴图能扛过读档
 	# （原版只存 sprite.resource_path，而运行时纹理没有路径 → 读档后角色贴图消失）
 	ModLoaderMod.install_script_extension(APPEARANCE_EXTENSION)
+	# 属性小图标兜底：本 mod 的 meme 属性图标是运行时贴图（resource_path 为空），
+	# 原版 get_scaling_stat_icon_text() 拼 [img]...[/img] 取 resource_path → 图标不显示
+	ModLoaderMod.install_script_extension(MOD_DIR + "extensions/singletons/utils.gd")
 	# 和 FengLiu-FengAddMods（土豆随想）一起跑
 	_install_fengaddmods_compat()
 
