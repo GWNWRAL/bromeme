@@ -98,6 +98,35 @@ const BROMEME_DRAW_MIN: int = 3
 const BROMEME_DRAW_MAX: int = 4
 const BROMEME_EXCLUSIVE_MARKER: String = "bromeme_exclusive"
 
+# -----------------------------------------------------------------------------
+#  「依赖持有某件具体道具」的效果 —— 组合卡/抽取卡绝不能搬运
+#
+#  这类效果的 key 就是**源道具的 id**，读取方会拿这个 id 去玩家背包里找那个道具的
+#  实例，用来实现"消耗/损毁"机制。原版只有 3 件：
+#     item_mirror     镜子    custom_key=duplicate_item            storage=1 (KEY_VALUE)
+#     item_goldfish   金鱼    custom_key=increase_tier_on_reroll   storage=4 (APPEND_KEY_VALUE)
+#     item_hourglass  沙漏    custom_key=""（key 本身就是道具 id）  storage=0 (SUM)
+#
+#  一旦被复制到组合卡上，玩家持有的是**卡**而不是那件道具，于是：
+#     base_shop.buy_item  → get_player_item(镜子id) 返回 null → remove_item(null)
+#     base_shop 出发按钮   → get_player_item(沙漏id) 返回 null → remove_item(null)
+#     set_reroll_button_price / shop_item → source_item.icon.get_data() 空引用
+#  轻则刷道具/效果表错乱，重则崩溃。所以从源头禁止搬运。
+# -----------------------------------------------------------------------------
+const BROMEME_IDENTITY_ITEM_IDS: Array = ["item_mirror", "item_goldfish", "item_hourglass"]
+const BROMEME_IDENTITY_CUSTOM_KEYS: Array = ["duplicate_item", "increase_tier_on_reroll"]
+
+
+# 这条效果是否"依赖持有某件具体道具"（搬到卡上会坏）
+func bromeme_is_identity_effect(effect) -> bool:
+	if effect == null or not is_instance_valid(effect):
+		return false
+	if BROMEME_IDENTITY_CUSTOM_KEYS.has(String(effect.custom_key)):
+		return true
+	if BROMEME_IDENTITY_ITEM_IDS.has(String(effect.key)):
+		return true
+	return false
+
 # 卡 → 道具：图标用卡图 + 减淡的 bromeme logo 水印
 const BROMEME_LOGO_PATH: String = "res://mods-unpacked/General-bromeme/meme/content/ui/bromeme_logo.png"
 const BROMEME_PICK_ICON_SIZE: int = 96
@@ -354,6 +383,9 @@ func bromeme_make_fusion_pick(a, b) -> UpgradeData:
 	var effects: Array = []
 	effects.append_array(bromeme_copy_effects(a))
 	effects.append_array(bromeme_copy_effects(b))
+	# 镜子/金鱼/沙漏这类道具的效果会被过滤掉；若两件都被滤空就别出卡
+	if effects.empty():
+		return null
 
 	var pick := bromeme_new_pick("mix", "%s+%s" % [String(a.my_id), String(b.my_id)])
 	pick.name = bromeme_half_display_name(a, b)
@@ -647,6 +679,9 @@ func bromeme_make_draw_pick() -> UpgradeData:
 			if Utils.is_stat_key(eff_hash):
 				continue
 			if String(effect.custom_key) == BROMEME_EXCLUSIVE_MARKER:
+				continue
+			# 镜子/金鱼/沙漏的效果会去背包找"那件道具"，搬到卡上必坏
+			if bromeme_is_identity_effect(effect):
 				continue
 			candidates.append([effect, item])
 	if candidates.empty():
@@ -1234,8 +1269,13 @@ func bromeme_roll_stat_hash(old_hash: int) -> int:
 
 func bromeme_copy_effects(item) -> Array:
 	var out: Array = []
+	if item == null or not is_instance_valid(item):
+		return out
 	for effect in item.effects:
 		if effect == null or not is_instance_valid(effect):
+			continue
+		# 镜子/金鱼/沙漏这类"依赖持有某件具体道具"的效果不能搬到卡上
+		if bromeme_is_identity_effect(effect):
 			continue
 		var copy = effect.duplicate()
 		if copy != null and is_instance_valid(copy):
