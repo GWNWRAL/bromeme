@@ -33,7 +33,106 @@ func deserialize(data: Dictionary) -> PlayerRunData:
 	_bromeme_preregister_cards(data)
 	var result: PlayerRunData = .deserialize(data)
 	_bromeme_restore_body_appearances()
+	_bromeme_sanitize_identity_effects()
 	return result
+
+
+# =============================================================================
+#  修复"组合卡搬了镜子/金鱼/沙漏效果"的坏存档
+#
+#  为什么必须做：这类效果的 key 是**源道具 id**，原版读取时会拿它去玩家背包找
+#  那件道具（实现"用掉/损毁"）。卡上带着它时玩家并没有那件道具 →
+#  RunData.get_player_item() 返回 null →
+#     base_shop.buy_item            → remove_item(null)
+#     base_shop 的出发按钮（沙漏）    → remove_item(null)
+#     set_reroll_button_price / shop_item → source_item.icon.get_data()
+#  轻则白嫖道具、效果表错乱，重则原生崩溃（0xc0000005）。
+#
+#  注意：玩家效果表 **整份存在存档里**（PlayerRunData.serialize 的 "effects" 字段），
+#  所以只清道具上的效果不够，必须同时把效果表里那条指向未持有道具的记录删掉。
+#
+#  2.42.45 起卡生成阶段已经不再搬运这类效果（item_service 的 bromeme_is_identity_effect），
+#  这里负责把**旧存档里已经生成的坏卡**修好。
+# =============================================================================
+const BROMEME_IDENTITY_ITEM_IDS: Array = ["item_mirror", "item_goldfish", "item_hourglass"]
+const BROMEME_IDENTITY_CUSTOM_KEYS: Array = ["duplicate_item", "increase_tier_on_reroll"]
+const BROMEME_CARD_ITEM_PREFIX: String = "item_bromeme_pick_"
+
+
+func _bromeme_sanitize_identity_effects() -> void:
+	if items == null or effects == null:
+		return
+	var stripped: int = 0
+	for item in items:
+		if item == null or not is_instance_valid(item):
+			continue
+		# 只动本 mod 生成的卡道具（原版真道具绝不能碰）
+		if not String(item.my_id).begins_with(BROMEME_CARD_ITEM_PREFIX):
+			continue
+		if item.effects == null or item.effects.empty():
+			continue
+		var keep: Array = []
+		for effect in item.effects:
+			if _bromeme_is_identity_effect(effect):
+				_bromeme_drop_identity_from_effects(effect)
+				stripped += 1
+				continue
+			keep.append(effect)
+		if keep.size() != item.effects.size():
+			item.effects = keep
+	if stripped > 0:
+		ModLoaderLog.info("读档修复：从组合卡上移除 %d 条「依赖道具身份」的效果（镜子/金鱼/沙漏类）" % stripped, "bromeme")
+
+
+func _bromeme_is_identity_effect(effect) -> bool:
+	if effect == null or not is_instance_valid(effect):
+		return false
+	if BROMEME_IDENTITY_CUSTOM_KEYS.has(String(effect.custom_key)):
+		return true
+	if BROMEME_IDENTITY_ITEM_IDS.has(String(effect.key)):
+		return true
+	return false
+
+
+func _bromeme_effect_hash(value: String, cached: int) -> int:
+	# Keys.generate_hash 就是 String.hash()；key 非空时以字符串为准（最可靠）
+	if value != "":
+		return Keys.generate_hash(value)
+	return cached
+
+
+# 把效果表里对应的记录删掉/清零，让读取方再也看不到这条"不存在道具"的效果
+func _bromeme_drop_identity_from_effects(effect) -> void:
+	if effect == null or not is_instance_valid(effect):
+		return
+	var key_hash: int = _bromeme_effect_hash(String(effect.key), int(effect.key_hash))
+	if key_hash == 0:
+		return
+	var ck_hash: int = _bromeme_effect_hash(String(effect.custom_key), int(effect.custom_key_hash))
+	var sm: int = int(effect.storage_method)
+
+	# KEY_VALUE(1) / APPEND_KEY_VALUE(4)：数组里是 [key_hash, value]，按 key_hash 过滤
+	if sm == 1 or sm == 4:
+		var arr = effects.get(ck_hash, null)
+		if arr is Array:
+			var out: Array = []
+			for e in arr:
+				if e is Array and e.size() > 0 and int(e[0]) == key_hash:
+					continue
+				out.append(e)
+			effects[ck_hash] = out
+		return
+
+	# APPEND_KEY(3)：数组里直接是 key_hash
+	if sm == 3:
+		var arr2 = effects.get(ck_hash, null)
+		if arr2 is Array:
+			arr2.erase(key_hash)
+		return
+
+	# SUM(0) / REPLACE(2)：直接按键累加的数值 → 归零
+	if effects.has(key_hash):
+		effects[key_hash] = 0
 
 
 # =============================================================================
